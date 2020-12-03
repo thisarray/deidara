@@ -96,25 +96,13 @@ def _parse_description(description):
 def _parse_module_size(description):
     """Return a string size of the memory module in description.
 
-    >>> _parse_module_size('8GB')
-    '8'
+    >>> _parse_module_size('4GB')
+    '4'
     >>> _parse_module_size('8 GB')
     '8'
-    >>> _parse_module_size('16GB (2 x 8GB)')
-    '2x8'
-    >>> _parse_module_size('16GB (2 x 8 GB)')
-    '2x8'
-    >>> _parse_module_size('16 GB (2 x 8GB)')
-    '2x8'
-    >>> _parse_module_size('16 GB (2 x 8 GB)')
+    >>> _parse_module_size('16GB (2x8GB)')
     '2x8'
     >>> _parse_module_size('(2 x 8GB) 16GB')
-    '2x8'
-    >>> _parse_module_size('(2 x 8 GB) 16GB')
-    '2x8'
-    >>> _parse_module_size('(2 x 8GB) 16 GB')
-    '2x8'
-    >>> _parse_module_size('(2 x 8 GB) 16 GB')
     '2x8'
 
     Args:
@@ -124,6 +112,7 @@ def _parse_module_size(description):
     """
     if not isinstance(description, str):
         raise TypeError('description must be a string.')
+
     sizes = []
     end = -1
     while True:
@@ -131,12 +120,15 @@ def _parse_module_size(description):
         if end <= 0:
             break
         start = end - 1
-        while (start >= 0) and (
-            description[start].isdigit() or description[start].isspace()):
+        # Skip any space between the size and "GB"
+        while (start >= 0) and description[start].isspace():
+            start -= 1
+        # Move to the start of the size
+        while (start >= 0) and description[start].isdigit():
             start -= 1
         start += 1
         try:
-            sizes.append(int(description[start:end]))
+            sizes.append(int(description[start:end].strip()))
         except ValueError:
             pass
 
@@ -219,7 +211,7 @@ def _parse_newegg(source):
         brand_end = separator + 3
         while not title[brand_end].isspace():
             brand_end += 1
-        brand = title[separator+3:brand_end]
+        brand = title[separator+3:brand_end].strip()
         size += 'GB@${} {}'.format(price, brand)
         descriptions.append((decimal.Decimal(price.replace(',', '')), size))
 
@@ -318,21 +310,65 @@ class _UnitTest(unittest.TestCase):
         for value in ['', 'foobar', 'foobarbaz']:
             self.assertIsNone(_parse_module_size(value))
         for value, expected in [
+            (' 4GB', '4'),
+            (' 4 GB', '4'),
             ('8GB', '8'),
             ('8 GB', '8'),
+            ('16GB ', '16'),
+            ('16 GB ', '16'),
+            ('16GB (2x8GB)', '2x8'),
+            ('16GB (2x 8GB)', '2x8'),
+            ('16GB (2x8 GB)', '2x8'),
+            ('16GB (2x 8 GB)', '2x8'),
+            ('16GB (2 x8GB)', '2x8'),
             ('16GB (2 x 8GB)', '2x8'),
+            ('16GB (2 x8 GB)', '2x8'),
             ('16GB (2 x 8 GB)', '2x8'),
+            ('16 GB (2x8GB)', '2x8'),
+            ('16 GB (2x 8GB)', '2x8'),
+            ('16 GB (2x8 GB)', '2x8'),
+            ('16 GB (2x 8 GB)', '2x8'),
+            ('16 GB (2 x8GB)', '2x8'),
             ('16 GB (2 x 8GB)', '2x8'),
+            ('16 GB (2 x8 GB)', '2x8'),
             ('16 GB (2 x 8 GB)', '2x8'),
+            ('(2x8GB) 16GB', '2x8'),
+            ('(2x 8GB) 16GB', '2x8'),
+            ('(2x8 GB) 16GB', '2x8'),
+            ('(2x 8 GB) 16GB', '2x8'),
+            ('(2 x8GB) 16GB', '2x8'),
             ('(2 x 8GB) 16GB', '2x8'),
+            ('(2 x8 GB) 16GB', '2x8'),
             ('(2 x 8 GB) 16GB', '2x8'),
+            ('(2x8GB) 16 GB', '2x8'),
+            ('(2x 8GB) 16 GB', '2x8'),
+            ('(2x8 GB) 16 GB', '2x8'),
+            ('(2x 8 GB) 16 GB', '2x8'),
+            ('(2 x8GB) 16 GB', '2x8'),
             ('(2 x 8GB) 16 GB', '2x8'),
-            ('(2 x 8 GB) 16 GB', '2x8')]:
+            ('(2 x8 GB) 16 GB', '2x8'),
+            ('(2 x 8 GB) 16 GB', '2x8'),
+            # Test misleading numbers preceding the size
+            ('4 8GB', '8'),
+            ('4 8 GB', '8'),
+            ('4 16GB (2x8GB)', '2x8'),
+            ('4 16GB (2x 8GB)', '2x8'),
+            ('4 16GB (2 x 8GB)', '2x8'),
+            ('4 16GB (2 x 8 GB)', '2x8'),
+            ('4 16 GB (2x8GB)', '2x8'),
+            ('4 16 GB (2x 8GB)', '2x8'),
+            ('4 16 GB (2 x 8GB)', '2x8'),
+            ('4 16 GB (2 x 8 GB)', '2x8')]:
             self.assertEqual(_parse_module_size(value), expected)
             self.assertEqual(_parse_module_size('Foobar ' + value), expected)
             self.assertEqual(_parse_module_size(value + ' baz'), expected)
             self.assertEqual(_parse_module_size('Foobar ' + value + ' baz'),
                              expected)
+            if '(' in value:
+                self.assertEqual(_parse_module_size(value.replace('(', '( ')),
+                                 expected)
+                self.assertEqual(_parse_module_size(value.replace(')', ' )')),
+                                 expected)
 
     def test_parse_micro_center(self):
         """Test parsing the micro center webpage."""
