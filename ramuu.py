@@ -1,26 +1,29 @@
 """Script to summarize RAM prices."""
 
+import collections
 import datetime
 import decimal
 import json
-import re
 import statistics
 import unittest
 
-_SIZE_PRICE_PATTERN = re.compile(r"""^(?P<count>\d)x
-(?P<size>\d+)GB@[$]
-(?P<price>[0-9.]+)""", re.ASCII | re.VERBOSE)
-"""Regular expression pattern to parse the memory module information."""
-
 class Item:
-    def __init__(self, date, dimm_type, store, size, price, brand):
+    def __init__(self, date, dimm_type, store, count, size, price, brand):
         """Initialize an Item instance."""
         if not isinstance(date, datetime.date):
             raise TypeError('date must be a datetime.date.')
         if not isinstance(dimm_type, str):
-            raise TypeError('dimm_type must be a string.')
+            raise TypeError('dimm_type must be a non-empty string.')
+        if len(dimm_type) < 6:
+            raise ValueError('dimm_type must be a non-empty string.')
         if not isinstance(store, str):
-            raise TypeError('store must be a string.')
+            raise TypeError('store must be a non-empty string.')
+        if len(store) < 5:
+            raise ValueError('store must be a non-empty string.')
+        if not isinstance(count, int):
+            raise TypeError('count must be a positive integer.')
+        if count <= 0:
+            raise ValueError('count must be a positive integer.')
         if not isinstance(size, int):
             raise TypeError('size must be a positive integer.')
         if size <= 0:
@@ -28,39 +31,50 @@ class Item:
         if not isinstance(price, decimal.Decimal):
             raise TypeError('price must be a decimal.Decimal.')
         if not isinstance(brand, str):
-            raise TypeError('brand must be a string.')
+            raise TypeError('brand must be a non-empty string.')
+        if len(brand) < 3:
+            raise ValueError('brand must be a non-empty string.')
 
         self.date = date
         """datetime.date the price was collected."""
 
-        self.dimm_type = dimm_type
-        """String type of the RAM module(s)."""
+        self.dimm_type = dimm_type.strip().lower()
+        """String type of the RAM module."""
 
-        self.store = store
+        self.store = store.strip().lower()
         """String name of the store selling this item."""
 
+        self.count = count
+        """Integer number of modules in this item."""
+
         self.size = size
-        """Integer total size of the RAM module(s)."""
+        """Integer size in GB of each RAM module."""
 
         self.price = price
         """decimal.Decimal price on self.date."""
 
-        self.brand = brand
+        self.brand = brand.strip().lower()
         """String brand of the manufacturer."""
 
     def __str__(self):
-        return '{}GB {} @ ${} from {} on {}'.format(
-            self.size, self.dimm_type, self.price, self.store,
-            self.date.isoformat())
+        return '{}x{}GB@${} {} for {} from {} on {}'.format(
+            self.count, self.size, self.price, self.brand,
+            self.dimm_type, self.store, self.date.isoformat())
+
+    @property
+    def total_size(self):
+        """Return the integer total size in GB of this item."""
+        return self.count * self.size
 
 
 def _parse_description(description):
-    """Return the size, the price, and the brand from description.
+    """Return the count, the size, the price, and the brand from description.
 
     Args:
         description: String description in the form "2x8GB@$19.99 Brand".
     Returns:
-        Integer total number of GB
+        Integer module count
+        Integer module size in GB
         decimal.Decimal price
         String brand
     """
@@ -69,29 +83,25 @@ def _parse_description(description):
     if len(description) < 10:
         raise ValueError('description must be a non-empty string.')
 
-    part, separator, brand = description.partition(' ')
-    if len(separator) <= 0:
-        return 0, decimal.Decimal(), brand
+    x_index = description.find('x')
+    dollar_index = description.find('GB@$')
+    space_index = description.find(' ')
 
-    if part[1] != 'x':
-        part = '1x' + part
+    if x_index <= 0:
+        count = 1
+    else:
+        count = int(description[:x_index])
 
-    match = _SIZE_PRICE_PATTERN.search(part)
-    if match is None:
-        return 0, decimal.Decimal(), brand
+    size = 0
+    price = decimal.Decimal()
+    brand = ''
+    if space_index > 0:
+        brand = description[space_index+1:]
+        if dollar_index > 0:
+            size = int(description[x_index+1:dollar_index])
+            price = decimal.Decimal(description[dollar_index+4:space_index])
 
-    try:
-        count = int(match.group('count'))
-    except ValueError:
-        count = 0
-    try:
-        size = int(match.group('size')) * count
-    except ValueError:
-        size = 0
-
-    price = decimal.Decimal(match.group('price'))
-
-    return size, price, brand
+    return count, size, price, brand
 
 def _parse_module_size(description):
     """Return a string size of the memory module in description.
@@ -170,6 +180,7 @@ def _parse_micro_center(source):
             continue
         price = product.get('price')
         size += 'GB@${} {}'.format(price, product.get('brand'))
+        # Add price as the first element of the tuple for sorting
         descriptions.append((decimal.Decimal(price.replace(',', '')), size))
 
     if len(descriptions) > 0:
@@ -213,6 +224,7 @@ def _parse_newegg(source):
             brand_end += 1
         brand = title[separator+3:brand_end].strip()
         size += 'GB@${} {}'.format(price, brand)
+        # Add price as the first element of the tuple for sorting
         descriptions.append((decimal.Decimal(price.replace(',', '')), size))
 
     if len(descriptions) > 0:
@@ -224,58 +236,41 @@ def _parse_newegg(source):
     return descriptions
 
 def _parse_document(document):
-    """Return a list of Item instances parsed from the dictionary document.
+    """Return a dictionary of Item instances parsed from document.
 
     Args:
         document: Dictionary containing price descriptions.
     Returns:
-        List of Item instances parsed from document.
+        Dictionary mapping a datetime.date to a list of Item instances.
     """
     if not isinstance(document, dict):
-        return []
+        return {}
 
-    result = []
+    result = collections.defaultdict(list)
     for date in document:
-        if (isinstance(date, datetime.date) and
-            isinstance(document[date], dict)):
-            for dimm_type in document[date]:
-                if isinstance(document[date][dimm_type], dict):
-                    for store in document[date][dimm_type]:
-                        if isinstance(document[date][dimm_type][store], list):
-                            for entry in document[date][dimm_type][store]:
-                                size, price, brand = _parse_description(entry)
-                                if size > 0:
-                                    result.append(Item(date, dimm_type, store,
-                                                       size, price, brand))
+        if not isinstance(date, datetime.date):
+            continue
+        if not isinstance(document[date], dict):
+            continue
+        for dimm_type in document[date]:
+            if not isinstance(document[date][dimm_type], dict):
+                continue
+            for store in document[date][dimm_type]:
+                if not isinstance(document[date][dimm_type][store], list):
+                    continue
+                for entry in document[date][dimm_type][store]:
+                    count, size, price, brand = _parse_description(entry)
+                    if size > 0:
+                        try:
+                            result[date].append(
+                                Item(date, dimm_type, store, count,
+                                     size, price, brand))
+                        except ValueError:
+                            print('Invalid entry:', entry)
     return result
 
 
 class _UnitTest(unittest.TestCase):
-    def test_pattern(self):
-        """Test the regular expression pattern."""
-        for value in ['', 'foobar', __doc__]:
-            self.assertIsNone(_SIZE_PRICE_PATTERN.search(value))
-        for value, expected in [
-            ('1x4GB@$14.99', ('1', '4', '14.99')),
-            ('1x4GB@$14.99 ', ('1', '4', '14.99')),
-            ('1x4GB@$14.99 Foo', ('1', '4', '14.99')),
-            ('1x8GB@$18.99', ('1', '8', '18.99')),
-            ('1x8GB@$18.99 ', ('1', '8', '18.99')),
-            ('1x8GB@$18.99 Foo', ('1', '8', '18.99')),
-            ('2x4GB@$24.99', ('2', '4', '24.99')),
-            ('2x4GB@$24.99 ', ('2', '4', '24.99')),
-            ('2x4GB@$24.99 Foo', ('2', '4', '24.99')),
-            ('2x8GB@$28.99', ('2', '8', '28.99')),
-            ('2x8GB@$28.99 ', ('2', '8', '28.99')),
-            ('2x8GB@$28.99 Foo', ('2', '8', '28.99')),
-            ('4x4GB@$44.99', ('4', '4', '44.99')),
-            ('4x4GB@$44.99 ', ('4', '4', '44.99')),
-            ('4x4GB@$44.99 Foo', ('4', '4', '44.99')),
-            ('4x8GB@$48.99', ('4', '8', '48.99')),
-            ('4x8GB@$48.99 ', ('4', '8', '48.99')),
-            ('4x8GB@$48.99 Foo', ('4', '8', '48.99'))]:
-            self.assertEqual(_SIZE_PRICE_PATTERN.findall(value), [expected])
-
     def test_parse_description(self):
         """Test parsing the string description."""
         for value in [None, 42.0, []]:
@@ -283,24 +278,33 @@ class _UnitTest(unittest.TestCase):
         for value in ['', 'foobar', 'foobarbaz']:
             self.assertRaises(ValueError, _parse_description, value)
         for value, expected in [
-            ('1x4GB@$14.99', (0, decimal.Decimal(), '')),
-            ('1x4GB@$14.99 ', (4, decimal.Decimal('14.99'), '')),
-            ('1x4GB@$14.99 Foo', (4, decimal.Decimal('14.99'), 'Foo')),
-            ('1x8GB@$18.99', (0, decimal.Decimal(), '')),
-            ('1x8GB@$18.99 ', (8, decimal.Decimal('18.99'), '')),
-            ('1x8GB@$18.99 Foo', (8, decimal.Decimal('18.99'), 'Foo')),
-            ('2x4GB@$24.99', (0, decimal.Decimal(), '')),
-            ('2x4GB@$24.99 ', (8, decimal.Decimal('24.99'), '')),
-            ('2x4GB@$24.99 Foo', (8, decimal.Decimal('24.99'), 'Foo')),
-            ('2x8GB@$28.99', (0, decimal.Decimal(), '')),
-            ('2x8GB@$28.99 ', (16, decimal.Decimal('28.99'), '')),
-            ('2x8GB@$28.99 Foo', (16, decimal.Decimal('28.99'), 'Foo')),
-            ('4x4GB@$44.99', (0, decimal.Decimal(), '')),
-            ('4x4GB@$44.99 ', (16, decimal.Decimal('44.99'), '')),
-            ('4x4GB@$44.99 Foo', (16, decimal.Decimal('44.99'), 'Foo')),
-            ('4x8GB@$48.99', (0, decimal.Decimal(), '')),
-            ('4x8GB@$48.99 ', (32, decimal.Decimal('48.99'), '')),
-            ('4x8GB@$48.99 Foo', (32, decimal.Decimal('48.99'), 'Foo'))]:
+            ('4GB@$14.99', (1, 0, decimal.Decimal(), '')),
+            ('4GB@$14.99 ', (1, 4, decimal.Decimal('14.99'), '')),
+            ('4GB@$14.99 Foo', (1, 4, decimal.Decimal('14.99'), 'Foo')),
+            ('8GB@$18.99', (1, 0, decimal.Decimal(), '')),
+            ('8GB@$18.99 ', (1, 8, decimal.Decimal('18.99'), '')),
+            ('8GB@$18.99 Foo', (1, 8, decimal.Decimal('18.99'), 'Foo')),
+            ('1x4GB@$14.99', (1, 0, decimal.Decimal(), '')),
+            ('1x4GB@$14.99 ', (1, 4, decimal.Decimal('14.99'), '')),
+            ('1x4GB@$14.99 Foo', (1, 4, decimal.Decimal('14.99'), 'Foo')),
+            ('1x8GB@$18.99', (1, 0, decimal.Decimal(), '')),
+            ('1x8GB@$18.99 ', (1, 8, decimal.Decimal('18.99'), '')),
+            ('1x8GB@$18.99 Foo', (1, 8, decimal.Decimal('18.99'), 'Foo')),
+            ('2x4GB@$24.99', (2, 0, decimal.Decimal(), '')),
+            ('2x4GB@$24.99 ', (2, 4, decimal.Decimal('24.99'), '')),
+            ('2x4GB@$24.99 Foo', (2, 4, decimal.Decimal('24.99'), 'Foo')),
+            ('2x8GB@$28.99', (2, 0, decimal.Decimal(), '')),
+            ('2x8GB@$28.99 ', (2, 8, decimal.Decimal('28.99'), '')),
+            ('2x8GB@$28.99 Foo', (2, 8, decimal.Decimal('28.99'), 'Foo')),
+            ('4x4GB@$44.99', (4, 0, decimal.Decimal(), '')),
+            ('4x4GB@$44.99 ', (4, 4, decimal.Decimal('44.99'), '')),
+            ('4x4GB@$44.99 Foo', (4, 4, decimal.Decimal('44.99'), 'Foo')),
+            ('4x8GB@$48.99', (4, 0, decimal.Decimal(), '')),
+            ('4x8GB@$48.99 ', (4, 8, decimal.Decimal('48.99'), '')),
+            ('4x8GB@$48.99 Foo', (4, 8, decimal.Decimal('48.99'), 'Foo')),
+            ('10x1GB@$101.99', (10, 0, decimal.Decimal(), '')),
+            ('10x1GB@$101.99 ', (10, 1, decimal.Decimal('101.99'), '')),
+            ('10x1GB@$101.99 Foo', (10, 1, decimal.Decimal('101.99'), 'Foo'))]:
             self.assertEqual(_parse_description(value), expected)
 
     def test_parse_module_size(self):
@@ -418,25 +422,53 @@ class _UnitTest(unittest.TestCase):
         today = datetime.datetime.now(datetime.timezone.utc).date()
         for value in [None, 42.0, []]:
             self.assertRaises(
-                TypeError, Item, value, '', '', 1, decimal.Decimal(), '')
+                TypeError, Item, value, 'desktop', 'store', 1, 2,
+                decimal.Decimal(), 'brand')
             self.assertRaises(
-                TypeError, Item, today, value, '', 1, decimal.Decimal(), '')
+                TypeError, Item, today, value, 'store', 1, 2,
+                decimal.Decimal(), 'brand')
             self.assertRaises(
-                TypeError, Item, today, '', value, 1, decimal.Decimal(), '')
+                TypeError, Item, today, 'desktop', value, 1, 2,
+                decimal.Decimal(), 'brand')
             self.assertRaises(
-                TypeError, Item, today, '', '', value, decimal.Decimal(), '')
+                TypeError, Item, today, 'desktop', 'store', value, 2,
+                decimal.Decimal(), 'brand')
             self.assertRaises(
-                TypeError, Item, today, '', '', 1, value, '')
+                TypeError, Item, today, 'desktop', 'store', 1, value,
+                decimal.Decimal(), 'brand')
             self.assertRaises(
-                TypeError, Item, today, '', '', 1, decimal.Decimal(), value)
+                TypeError, Item, today, 'desktop', 'store', 1, 2,
+                value, 'brand')
+            self.assertRaises(
+                TypeError, Item, today, 'desktop', 'store', 1, 2,
+                decimal.Decimal(), value)
         for value in [-1, 0]:
             self.assertRaises(
-                ValueError, Item, today, '', '', value, decimal.Decimal(), '')
+                ValueError, Item, today, 'laptop', 'store', value, 2,
+                decimal.Decimal(), 'brand')
+            self.assertRaises(
+                ValueError, Item, today, 'laptop', 'store', 1, value,
+                decimal.Decimal(), 'brand')
 
     def test_parse_document(self):
         """Test parsing a YAML document."""
         for value in [None, 42.0, [], {}, {'foo': 'bar'}]:
-            self.assertEqual(_parse_document(value), [])
+            self.assertEqual(_parse_document(value), {})
+
+        today = datetime.datetime.now(datetime.timezone.utc).date()
+        result = _parse_document({
+            today: {
+                'desktop': {
+                    'store': ['4GB@$14.99 Foo']
+                },
+                'laptop': {
+                    'store': ['2x4GB@$24.99 Foo']
+                }
+            }
+        })
+        self.assertEqual(len(result), 1)
+        self.assertIn(today, result)
+        self.assertEqual(len(result[today]), 2)
 
 if __name__ == '__main__':
     import argparse
@@ -444,7 +476,7 @@ if __name__ == '__main__':
     import os.path
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        '-m', '--microcenter', default=[], nargs='+',
+        '-c', '--microcenter', default=[], nargs='+',
         help='fetch, parse, and print the micro center pages at URLs')
     parser.add_argument(
         '-n', '--newegg', default=[], nargs='+',
@@ -452,6 +484,9 @@ if __name__ == '__main__':
     parser.add_argument(
         '-p', '--path', default='',
         help='parse the YAML price data at path')
+    parser.add_argument(
+        '-m', '--module', type=int, default=0,
+        help='integer size of the module on which to filter')
     parser.add_argument(
         '-s', '--store', default='',
         help='string name of the store on which to filter')
@@ -474,19 +509,30 @@ if __name__ == '__main__':
                 _parse_newegg(response.text)
     elif os.path.isfile(args.path):
         import yaml
-        items = []
+        date_map = {}
         with open(args.path, 'r', encoding='utf-8') as f:
             for document in yaml.safe_load_all(f):
-                items.extend(_parse_document(document))
-        if len(args.store) > 0:
-            items = [item for item in items if item.store == args.store]
-        if len(args.type) > 0:
-            items = [item for item in items if item.dimm_type == args.type]
-        for item in items:
-            print(item)
-        if len(items) > 0:
-            print('Price/GB: ${}'.format(statistics.mean(
-                [item.price / item.size for item in items])))
+                date_map.update(_parse_document(document))
+        for date in sorted(date_map.keys()):
+            items = date_map[date]
+            if args.module > 0:
+                items = [item for item in items if item.size == args.module]
+            if len(args.store) > 0:
+                items = [item for item in items
+                         if item.store == args.store.strip().lower()]
+            if len(args.type) > 0:
+                items = [item for item in items
+                         if item.dimm_type == args.type.strip().lower()]
+            if len(items) <= 0:
+                continue
+            if args.module > 0:
+                print('{}: Price/Module: ${}'.format(
+                    date.isoformat(), statistics.mean(
+                        [item.price / item.count for item in items])))
+            else:
+                print('{}: Price/GB: ${}'.format(
+                    date.isoformat(), statistics.mean(
+                        [item.price / item.total_size for item in items])))
     else:
         tests = [doctest.DocTestSuite(),
                  unittest.defaultTestLoader.loadTestsFromTestCase(_UnitTest)]
