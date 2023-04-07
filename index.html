@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDR4 RAM Prices</title>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+google.charts.load('current', {packages: ['corechart', 'table']});
+google.charts.setOnLoadCallback(fetchData);
+
+function fetchData() {
+  if (typeof google === "undefined") {
+    return;
+  }
+  fetch('https://thisarray.github.io/deidara/ddr4.yaml')
+    .then(response => response.text())
+    .then(data => drawCharts(data));
+}
+
+/*
+ * Array of string RAM module types in lowercase.
+ */
+const DIMM_TYPES = ['desktop', 'laptop'];
+
+/*
+ * Array of string store names in lowercase.
+ */
+const STORE_NAMES = ['best buy', 'micro center', 'newegg'];
+
+/*
+ * Reduce function to sum an array of values.
+ */
+function sumArray(accumulator, currentValue) {
+  return accumulator + currentValue;
+}
+
+/*
+ * Draw the chart for the overall prices.
+ */
+function drawOverall(elementID, dateMap) {
+  const element = document.querySelector(elementID);
+
+  let dates = Array.from(dateMap.keys()),
+      data = new google.visualization.DataTable(),
+      chart = new google.visualization.LineChart(element),
+      options = {
+        haxis: {title: 'Date'},
+        legend: {position: 'bottom'},
+        vAxis: {title: 'Price per GB'}
+      },
+      row, items, count, total;
+
+  data.addColumn('date', 'Date');
+  for (let store of STORE_NAMES) {
+    for (let dimmType of DIMM_TYPES) {
+      data.addColumn('number', store + ' ' + dimmType);
+    }
+  }
+
+  dates.sort();
+  for (let isoDate of dates) {
+    row = [new Date(isoDate)];
+    for (let store of STORE_NAMES) {
+      for (let dimmType of DIMM_TYPES) {
+        items = dateMap.get(isoDate).filter(i => ((i.store === store) && (i.dimmType === dimmType)));
+        count = items.length;
+        if (count > 0) {
+          total = items.map(i => (i.price / i.totalSize)).reduce(sumArray);
+          row.push({v: total / count});
+        }
+        else {
+          row.push({v: 0});
+        }
+      }
+    }
+    data.addRow(row);
+  }
+
+  chart.draw(data, options);
+}
+
+/*
+ * Draw the chart for the RAM module of type dimmType and sized size.
+ */
+function drawModule(dimmType, size, dateMap) {
+  const element = document.querySelector('#' + dimmType + size);
+
+  let dates = Array.from(dateMap.keys()),
+      data = new google.visualization.DataTable(),
+      chart = new google.visualization.LineChart(element),
+      options = {
+        hAxis: {title: 'Date'},
+        legend: {position: 'bottom'},
+        vAxis: {title: 'Price per module'}
+      },
+      row, items, perModulePrices;
+
+  data.addColumn('date', 'Date');
+  data.addColumn('number', 'Min');
+  data.addColumn('number', 'Average');
+  data.addColumn('number', 'Max');
+
+  dates.sort();
+  for (let isoDate of dates) {
+    row = [new Date(isoDate)];
+    items = dateMap.get(isoDate).filter(i => ((i.dimmType === dimmType) && (i.size === size)));
+    count = items.length;
+    if (count > 0) {
+      perModulePrices = items.map(i => (i.price / i.count));
+      row.push({v: Math.min(...perModulePrices)});
+      row.push({v: perModulePrices.reduce(sumArray) / count});
+      row.push({v: Math.max(...perModulePrices)});
+    }
+    else {
+      row.push({v: 0});
+      row.push({v: 0});
+      row.push({v: 0});
+    }
+    data.addRow(row);
+  }
+
+  chart.draw(data, options);
+}
+
+class Item {
+  constructor(date, dimmType, store, count, size, price, brand) {
+    if (!(date instanceof Date)) {
+      throw new TypeError('date must be a Date object.');
+    }
+    if (typeof dimmType !== 'string') {
+      throw new TypeError('dimmType must be a non-empty string.');
+    }
+    if (dimmType.length < 6) {
+      throw new RangeError('dimmType must be a non-empty string.');
+    }
+    if (typeof store !== 'string') {
+      throw new TypeError('store must be a non-empty string.');
+    }
+    if (store.length <= 5) {
+      throw new RangeError('store must be a non-empty string.');
+    }
+    if (typeof count !== 'number') {
+      throw new TypeError('count must be a positive integer.');
+    }
+    if (count <= 0) {
+      throw new RangeError('count must be a positive integer.');
+    }
+    if (typeof size !== 'number') {
+      throw new TypeError('size must be a positive integer.');
+    }
+    if (size <= 0) {
+      throw new RangeError('size must be a positive integer.');
+    }
+    if (typeof price !== 'number') {
+      throw new TypeError('price must be a positive number.');
+    }
+    if (price <= 0) {
+      throw new RangeError('price must be a positive number.');
+    }
+    if (typeof brand !== 'string') {
+      throw new TypeError('brand must be a non-empty string.');
+    }
+    if (brand.length <= 3) {
+      throw new RangeError('brand must be a non-empty string.');
+    }
+
+    this.date = date;
+    this.dimmType = dimmType.trim().toLowerCase();
+    this.store = store.trim().toLowerCase();
+    this.count = count;
+    this.size = size;
+    this.price = price;
+    this.brand = brand.trim().toLowerCase();
+  }
+
+  /*
+   * Return the integer total size in GB of this item.
+   */
+  get totalSize() {
+    return this.count * this.size;
+  }
+}
+
+/*
+ * Return the count, the size, the price, and the brand from description.
+ */
+function parseDescription(description) {
+  if (typeof description !== 'string') {
+    throw new TypeError('description must be a non-empty string.');
+  }
+  if (description.length < 10) {
+    throw new RangeError('description must be a non-empty string.');
+  }
+
+  let xIndex = description.indexOf('x'),
+      dollarIndex = description.indexOf('gb@$'),
+      spaceIndex = description.indexOf(' '),
+      count = 0,
+      size = 0,
+      price = 0,
+      brand = '';
+
+  if (xIndex <= 0) {
+    count = 1;
+  }
+  else {
+    count = parseInt(description.substring(0, xIndex), 10);
+  }
+  if (spaceIndex > 0) {
+    brand = description.substring(spaceIndex + 1);
+    if (dollarIndex > 0) {
+      size = parseInt(description.substring(xIndex + 1, dollarIndex), 10);
+      price = parseFloat(description.substring(dollarIndex + 4, spaceIndex));
+    }
+  }
+
+  return [count, size, price, brand];
+}
+
+/*
+ * Return a Map object mapping an ISO date string to an array of Item objects parsed from yaml.
+ */
+function parseYAML(yaml) {
+  let lines = yaml.split('\n').map(l => l.trim().toLowerCase()),
+      result = new Map(),
+      cleaned, date, isoDate, dimmType, store, count, size, price, brand;
+  for (let line of lines) {
+    if (line.endsWith(':')) {
+      cleaned = line.substring(0, line.length - 1);
+      if (cleaned.startsWith('20')) {
+        date = new Date(cleaned);
+        isoDate = date.toISOString().substring(0, 10);
+      }
+      else if (DIMM_TYPES.includes(cleaned)) {
+        dimmType = cleaned;
+      }
+      else if (STORE_NAMES.includes(cleaned)) {
+        store = cleaned;
+      }
+    }
+    else if (line.startsWith('- ')) {
+      [count, size, price, brand] = parseDescription(line.substring(2));
+      if (size > 0) {
+        if (!result.has(isoDate)) {
+          result.set(isoDate, []);
+        }
+        result.get(isoDate).push(new Item(date, dimmType, store, count, size, price, brand));
+      }
+    }
+  }
+  return result;
+}
+
+/*
+ * Populate the charts with data from yaml.
+ */
+function drawCharts(yaml) {
+  let dateMap = parseYAML(yaml);
+
+  drawOverall('#chart', dateMap);
+  for (let dimmType of DIMM_TYPES) {
+    drawModule(dimmType, 4, dateMap);
+    drawModule(dimmType, 8, dateMap);
+    drawModule(dimmType, 16, dateMap);
+    drawModule(dimmType, 32, dateMap);
+  }
+}
+  </script>
+  <style type="text/css" media="screen">
+body {
+  background-color: white;
+  color: black;
+}
+output {
+  display: block;
+  height: 600px;
+  width: 1000px;
+}
+  </style>
+</head>
+
+<body>
+
+<main>
+<h1>DDR4 RAM Prices</h1>
+
+<output id="chart"></output>
+
+<p>Price per GB in US dollars.</p>
+
+<h2>Price per 4 GB desktop module in US dollars</h2>
+
+<output id="desktop4"></output>
+
+<h2>Price per 8 GB desktop module in US dollars</h2>
+
+<output id="desktop8"></output>
+
+<h2>Price per 16 GB desktop module in US dollars</h2>
+
+<output id="desktop16"></output>
+
+<h2>Price per 32 GB desktop module in US dollars</h2>
+
+<output id="desktop32"></output>
+
+<h2>Price per 4 GB laptop module in US dollars</h2>
+
+<output id="laptop4"></output>
+
+<h2>Price per 8 GB laptop module in US dollars</h2>
+
+<output id="laptop8"></output>
+
+<h2>Price per 16 GB laptop module in US dollars</h2>
+
+<output id="laptop16"></output>
+
+<h2>Price per 32 GB laptop module in US dollars</h2>
+
+<output id="laptop32"></output>
+
+</main>
+
+</body>
+
+</html>
