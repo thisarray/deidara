@@ -162,7 +162,7 @@ class Item {
     if (typeof brand !== 'string') {
       throw new TypeError('brand must be a non-empty string.');
     }
-    if (brand.length <= 3) {
+    if (brand.length <= 0) {
       throw new RangeError('brand must be a non-empty string.');
     }
 
