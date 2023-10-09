@@ -7,6 +7,11 @@ import json
 import statistics
 import unittest
 
+_DEFAULT_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:86.0) Gecko/20100101 Firefox/110.0'
+}
+"""Dictionary of default headers to use by requests."""
+
 class Item:
     def __init__(self, date, dimm_type, store, count, size, price, brand):
         """Initialize an Item instance."""
@@ -498,12 +503,14 @@ if __name__ == '__main__':
     if len(args.microcenter) > 0:
         import requests
         with requests.Session() as session:
+            session.headers.update(_DEFAULT_HEADERS)
             for url in args.microcenter:
                 response = session.get(url)
                 _parse_micro_center(response.text)
     elif len(args.newegg) > 0:
         import requests
         with requests.Session() as session:
+            session.headers.update(_DEFAULT_HEADERS)
             for url in args.newegg:
                 response = session.get(url)
                 _parse_newegg(response.text)
