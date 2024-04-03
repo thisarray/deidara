@@ -7,11 +7,6 @@ import json
 import statistics
 import unittest
 
-_DEFAULT_HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:86.0) Gecko/20100101 Firefox/110.0'
-}
-"""Dictionary of default headers to use by requests."""
-
 class Item:
     def __init__(self, date, dimm_type, store, count, size, price, brand):
         """Initialize an Item instance."""
@@ -501,19 +496,15 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if len(args.microcenter) > 0:
-        import requests
-        with requests.Session() as session:
-            session.headers.update(_DEFAULT_HEADERS)
-            for url in args.microcenter:
-                response = session.get(url)
-                _parse_micro_center(response.text)
+        for path in args.microcenter:
+            if os.path.isfile(path):
+                with open(path, 'r', encoding='utf-8') as f:
+                    _parse_micro_center(f.read())
     elif len(args.newegg) > 0:
-        import requests
-        with requests.Session() as session:
-            session.headers.update(_DEFAULT_HEADERS)
-            for url in args.newegg:
-                response = session.get(url)
-                _parse_newegg(response.text)
+        for path in args.newegg:
+            if os.path.isfile(path):
+                with open(path, 'r', encoding='utf-8') as f:
+                    _parse_newegg(f.read())
     elif os.path.isfile(args.path):
         import yaml
         date_map = {}
