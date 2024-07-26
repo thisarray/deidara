@@ -6,7 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DDR4 RAM Prices</title>
   <script src="https://www.gstatic.com/charts/loader.js"></script>
-  <script>
+  <style type="text/css" media="screen">
+body {
+  background-color: white;
+  color: black;
+}
+output {
+  display: block;
+  height: 600px;
+  width: 1000px;
+}
+  </style>
+</head>
+
+<body>
+
+<main>
+<h1>DDR4 RAM Prices</h1>
+
+<output id="chart"></output>
+
+<p>Price per GB in US dollars.</p>
+
+<h2>Price per 4 GB desktop module in US dollars</h2>
+
+<output id="desktop4"></output>
+
+<h2>Price per 8 GB desktop module in US dollars</h2>
+
+<output id="desktop8"></output>
+
+<h2>Price per 16 GB desktop module in US dollars</h2>
+
+<output id="desktop16"></output>
+
+<h2>Price per 32 GB desktop module in US dollars</h2>
+
+<output id="desktop32"></output>
+
+<h2>Price per 4 GB laptop module in US dollars</h2>
+
+<output id="laptop4"></output>
+
+<h2>Price per 8 GB laptop module in US dollars</h2>
+
+<output id="laptop8"></output>
+
+<h2>Price per 16 GB laptop module in US dollars</h2>
+
+<output id="laptop16"></output>
+
+<h2>Price per 32 GB laptop module in US dollars</h2>
+
+<output id="laptop32"></output>
+
+</main>
+
+<script>
 google.charts.load('current', {packages: ['corechart', 'table']});
 google.charts.setOnLoadCallback(fetchData);
 
@@ -267,63 +323,7 @@ function drawCharts(yaml) {
     drawModule(dimmType, 32, dateMap);
   }
 }
-  </script>
-  <style type="text/css" media="screen">
-body {
-  background-color: white;
-  color: black;
-}
-output {
-  display: block;
-  height: 600px;
-  width: 1000px;
-}
-  </style>
-</head>
-
-<body>
-
-<main>
-<h1>DDR4 RAM Prices</h1>
-
-<output id="chart"></output>
-
-<p>Price per GB in US dollars.</p>
-
-<h2>Price per 4 GB desktop module in US dollars</h2>
-
-<output id="desktop4"></output>
-
-<h2>Price per 8 GB desktop module in US dollars</h2>
-
-<output id="desktop8"></output>
-
-<h2>Price per 16 GB desktop module in US dollars</h2>
-
-<output id="desktop16"></output>
-
-<h2>Price per 32 GB desktop module in US dollars</h2>
-
-<output id="desktop32"></output>
-
-<h2>Price per 4 GB laptop module in US dollars</h2>
-
-<output id="laptop4"></output>
-
-<h2>Price per 8 GB laptop module in US dollars</h2>
-
-<output id="laptop8"></output>
-
-<h2>Price per 16 GB laptop module in US dollars</h2>
-
-<output id="laptop16"></output>
-
-<h2>Price per 32 GB laptop module in US dollars</h2>
-
-<output id="laptop32"></output>
-
-</main>
-
+</script>
 </body>
 
 </html>
