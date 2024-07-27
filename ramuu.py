@@ -479,6 +479,9 @@ if __name__ == '__main__':
         '-c', '--microcenter', default=[], nargs='+',
         help='fetch, parse, and print the micro center pages at URLs')
     parser.add_argument(
+        '-l', '--lint', default='',
+        help='check the YAML price data at path')
+    parser.add_argument(
         '-n', '--newegg', default=[], nargs='+',
         help='fetch, parse, and print the Newegg feeds at URLs')
     parser.add_argument(
@@ -500,6 +503,21 @@ if __name__ == '__main__':
             if os.path.isfile(path):
                 with open(path, 'r', encoding='utf-8') as f:
                     _parse_micro_center(f.read())
+    elif os.path.isfile(args.lint):
+        last = None
+        with open(args.lint, 'r', encoding='utf-8') as f:
+            for i, line in enumerate(f, 1):
+                cleaned = line.strip()
+                if cleaned.startswith('- '):
+                    # Current line is an item description
+                    count, size, price, brand = _parse_description(cleaned[2:])
+                    if (isinstance(last, decimal.Decimal) and
+                        (last > price)):
+                        print('Line {}: {} out of order!'.format(
+                            i, cleaned))
+                    last = price
+                else:
+                    last = None
     elif len(args.newegg) > 0:
         for path in args.newegg:
             if os.path.isfile(path):
