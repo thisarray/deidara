@@ -63,7 +63,7 @@ output {
 </main>
 
 <script>
-google.charts.load('current', {packages: ['corechart', 'table']});
+google.charts.load('current', {packages: ['corechart']});
 google.charts.setOnLoadCallback(fetchData);
 
 function fetchData() {
@@ -91,6 +91,8 @@ const STORE_NAMES = ['best buy', 'micro center', 'newegg'];
 function sumArray(accumulator, currentValue) {
   return accumulator + currentValue;
 }
+
+const MAIN = document.querySelector('main');
 
 /*
  * Draw the chart for the overall prices.
@@ -141,17 +143,21 @@ function drawOverall(elementID, dateMap) {
  * Draw the chart for the RAM module of type dimmType and sized size.
  */
 function drawModule(dimmType, size, dateMap) {
-  const element = document.querySelector('#' + dimmType + size);
-
-  let dates = Array.from(dateMap.keys()),
+  let header = document.createElement('h2'),
+      output = document.createElement('output'),
+      dates = Array.from(dateMap.keys()),
       data = new google.visualization.DataTable(),
-      chart = new google.visualization.LineChart(element),
+      chart = new google.visualization.LineChart(output),
       options = {
         hAxis: {title: 'Date'},
         legend: {position: 'bottom'},
         vAxis: {title: 'Price per module'}
       },
       row, items, perModulePrices;
+
+  header.appendChild(document.createTextNode(`Price per ${ size } GB ${ dimmType.toLowerCase() } module in US dollars`));
+  MAIN.appendChild(header);
+  MAIN.appendChild(output);
 
   data.addColumn('date', 'Date');
   data.addColumn('number', 'Min');
