@@ -291,10 +291,9 @@ function drawCharts(yaml) {
 
   drawOverall('#chart', dateMap);
   for (let dimmType of DIMM_TYPES) {
-    drawModule(dimmType, 4, dateMap);
-    drawModule(dimmType, 8, dateMap);
-    drawModule(dimmType, 16, dateMap);
-    drawModule(dimmType, 32, dateMap);
+    for (let size of [4, 8, 16, 32]) {
+      drawModule(dimmType, size, dateMap);
+    }
   }
 }
 </script>
