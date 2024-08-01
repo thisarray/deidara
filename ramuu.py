@@ -485,6 +485,9 @@ if __name__ == '__main__':
         '-n', '--newegg', default=[], nargs='+',
         help='fetch, parse, and print the Newegg feeds at URLs')
     parser.add_argument(
+        '-o', '--order', default='',
+        help='sort the YAML price data at path')
+    parser.add_argument(
         '-p', '--path', default='',
         help='parse the YAML price data at path')
     parser.add_argument(
@@ -523,6 +526,22 @@ if __name__ == '__main__':
             if os.path.isfile(path):
                 with open(path, 'r', encoding='utf-8') as f:
                     _parse_newegg(f.read())
+    elif os.path.isfile(args.order):
+        buffer = []
+        with open(args.order, 'r', encoding='utf-8') as f:
+            for line in f:
+                cleaned = line.strip()
+                if len(cleaned) <= 0:
+                    continue
+                if cleaned.startswith('- '):
+                    description = cleaned[2:]
+                else:
+                    description = cleaned
+                count, size, price, brand = _parse_description(description)
+                buffer.append((price, brand, size, count, description))
+        buffer.sort()
+        for price, brand, size, count, description in buffer:
+            print('        -', description)
     elif os.path.isfile(args.path):
         import yaml
         date_map = {}
