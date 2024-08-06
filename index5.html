@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DDR5 RAM Prices</title>
+  <title>DDR5 Memory Prices</title>
   <script src="https://www.gstatic.com/charts/loader.js"></script>
   <style type="text/css" media="screen">
 body {
@@ -22,7 +22,7 @@ output {
 <body>
 
 <main>
-<h1>DDR5 RAM Prices</h1>
+<h1>DDR5 Memory Prices</h1>
 
 <output id="chart"></output>
 
@@ -44,7 +44,7 @@ function fetchData() {
 }
 
 /*
- * Array of string RAM module types in lowercase.
+ * Array of string memory module types in lowercase.
  */
 const DIMM_TYPES = ['desktop', 'laptop'];
 
@@ -108,7 +108,7 @@ function drawOverall(elementID, dateMap) {
 }
 
 /*
- * Draw the chart for the RAM module of type dimmType and sized size.
+ * Draw the chart for the memory module of type dimmType and sized size.
  */
 function drawModule(dimmType, size, dateMap) {
   let header = document.createElement('h2'),
