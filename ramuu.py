@@ -1,4 +1,4 @@
-"""Script to summarize RAM prices."""
+"""Script to summarize memory prices."""
 
 import collections
 import datetime
@@ -39,7 +39,7 @@ class Item:
         """datetime.date the price was collected."""
 
         self.dimm_type = dimm_type.strip().lower()
-        """String type of the RAM module."""
+        """String type of the memory module."""
 
         self.store = store.strip().lower()
         """String name of the store selling this item."""
@@ -48,7 +48,7 @@ class Item:
         """Integer number of modules in this item."""
 
         self.size = size
-        """Integer size in GB of each RAM module."""
+        """Integer size in GB of each memory module."""
 
         self.price = price
         """decimal.Decimal price on self.date."""
@@ -116,7 +116,7 @@ def _parse_module_size(description):
     '2x8'
 
     Args:
-        description: String description of a RAM module.
+        description: String description of a memory module.
     Returns:
         String size of the memory module in description.
     """
