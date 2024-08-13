@@ -513,6 +513,12 @@ if __name__ == '__main__':
                 cleaned = line.strip()
                 if cleaned.startswith('- '):
                     # Current line is an item description
+                    if not line.startswith('        -'):
+                        print('Line {}: {} bad indent!'.format(
+                            i, cleaned))
+                    if not line.endswith(cleaned + '\n'):
+                        print('Line {}: {} trailing whitespace!'.format(
+                            i, cleaned))
                     count, size, price, brand = _parse_description(cleaned[2:])
                     if (isinstance(last, decimal.Decimal) and
                         (last > price)):
