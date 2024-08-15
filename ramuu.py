@@ -511,13 +511,13 @@ if __name__ == '__main__':
         with open(args.lint, 'r', encoding='utf-8') as f:
             for i, line in enumerate(f, 1):
                 cleaned = line.strip()
+                if not line.endswith(cleaned + '\n'):
+                    print('Line {}: {} trailing whitespace!'.format(
+                        i, cleaned))
                 if cleaned.startswith('- '):
                     # Current line is an item description
                     if not line.startswith('        -'):
                         print('Line {}: {} bad indent!'.format(
-                            i, cleaned))
-                    if not line.endswith(cleaned + '\n'):
-                        print('Line {}: {} trailing whitespace!'.format(
                             i, cleaned))
                     count, size, price, brand = _parse_description(cleaned[2:])
                     if (isinstance(last, decimal.Decimal) and
