@@ -511,6 +511,9 @@ if __name__ == '__main__':
         with open(args.lint, 'r', encoding='utf-8') as f:
             for i, line in enumerate(f, 1):
                 cleaned = line.strip()
+                if len(cleaned) <= 0:
+                    print('Line {}: Empty line!'.format(i))
+                    continue
                 if not line.endswith(cleaned + '\n'):
                     print('Line {}: {} trailing whitespace!'.format(
                         i, cleaned))
