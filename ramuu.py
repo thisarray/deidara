@@ -7,6 +7,16 @@ import json
 import statistics
 import unittest
 
+LABELS = (
+    '202',
+    '    Desktop:',
+    '    Laptop:',
+    '        Best Buy:',
+    '        micro center:',
+    '        Newegg:'
+)
+"""Tuple of string labels found in the YAML price data with proper indent."""
+
 class Item:
     def __init__(self, date, dimm_type, store, count, size, price, brand):
         """Initialize an Item instance."""
@@ -530,6 +540,14 @@ if __name__ == '__main__':
                     last = price
                 else:
                     last = None
+
+                    if cleaned.endswith(':'):
+                        if not line.startswith(LABELS):
+                            print('Line {}: {} bad indent!'.format(
+                                i, cleaned))
+                    else:
+                        print('Line {}: {} invalid line!'.format(
+                            i, cleaned))
     elif len(args.newegg) > 0:
         for path in args.newegg:
             if os.path.isfile(path):
