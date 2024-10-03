@@ -533,11 +533,11 @@ if __name__ == '__main__':
                         print('Line {}: {} bad indent!'.format(
                             i, cleaned))
                     count, size, price, brand = _parse_description(cleaned[2:])
-                    if (isinstance(last, decimal.Decimal) and
-                        (last > price)):
+                    if (isinstance(last, tuple) and
+                        (last > (price, brand, size, count))):
                         print('Line {}: {} out of order!'.format(
                             i, cleaned))
-                    last = price
+                    last = (price, brand, size, count)
                 else:
                     last = None
 
