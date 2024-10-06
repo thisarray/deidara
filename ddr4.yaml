@@ -6506,8 +6506,8 @@
         Best Buy:
         - 8GB@$37.99 HyperX
         - 8GB@$37.99 PNY
-        - 8GB@$39.99 PNY
         - 8GB@$39.99 Corsair
+        - 8GB@$39.99 PNY
         - 2x4GB@$47.99 Corsair
         - 2x8GB@$59.99 Corsair
         - 16GB@$67.99 HyperX
@@ -6546,12 +6546,12 @@
         - 2x8GB@$104.99 HyperX
         - 2x8GB@$108.99 Adata
         - 2x8GB@$109.99 Adata
+        - 2x8GB@$138.99 Corsair
+        - 2x8GB@$138.99 Corsair
         - 2x16GB@$138.99 Corsair
-        - 2x8GB@$138.99 Corsair
-        - 2x8GB@$138.99 Corsair
         - 2x16GB@$139.99 HyperX
-        - 2x16GB@$142.99 Corsair
         - 2x8GB@$142.99 Corsair
+        - 2x16GB@$142.99 Corsair
         - 16GB@$147.99 PNY
         - 2x16GB@$149.99 Adata
         - 2x16GB@$149.99 HyperX
@@ -6560,8 +6560,8 @@
         - 2x16GB@$153.99 Corsair
         - 2x16GB@$156.99 HyperX
         - 2x16GB@$159.99 Corsair
-        - 2x16GB@$159.99 HyperX
         - 2x8GB@$159.99 HyperX
+        - 2x16GB@$159.99 HyperX
         - 2x16GB@$160.99 HyperX
         - 2x16GB@$161.99 Corsair
         - 2x8GB@$162.99 Corsair
@@ -6572,8 +6572,8 @@
         - 2x16GB@$176.99 Corsair
         - 2x16GB@$184.99 HyperX
         - 2x16GB@$189.99 Adata
-        - 4x8GB@$209.99 HyperX
         - 2x16GB@$209.99 Corsair
+        - 4x8GB@$209.99 HyperX
         - 2x16GB@$221.99 Corsair
         - 2x16GB@$284.99 Corsair
         - 4x16GB@$364.99 HyperX
@@ -6617,9 +6617,9 @@
         - 2x4GB@$44.99 Patriot
         - 2x8GB@$72.99 GeIL
         - 2x8GB@$73.99 OLOy
+        - 2x8GB@$74.99 G.SKILL
         - 16GB@$74.99 G.SKILL
         - 16GB@$74.99 Patriot
-        - 2x8GB@$74.99 G.SKILL
         - 2x8GB@$74.99 Team
         - 2x8GB@$74.99 Team
         - 2x8GB@$75.99 Crucial
@@ -6692,23 +6692,23 @@
         - 16GB@$62.99 G.SKILL
         - 2x8GB@$64.99 G.SKILL
         - 2x8GB@$64.99 G.SKILL
+        - 2x8GB@$69.99 Crucial
+        - 2x8GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 Team
-        - 2x8GB@$69.99 Crucial
-        - 2x8GB@$69.99 G.SKILL
         - 16GB@$70.99 Patriot
         - 16GB@$73.99 CORSAIR
         - 2x8GB@$73.99 Crucial
-        - 16GB@$74.99 G.SKILL
         - 2x8GB@$74.99 Crucial
         - 2x8GB@$74.99 G.SKILL
         - 2x8GB@$74.99 G.SKILL
+        - 16GB@$74.99 G.SKILL
         - 2x8GB@$80.99 CORSAIR
         - 2x8GB@$84.99 CORSAIR
         - 2x8GB@$94.99 G.SKILL
-        - 16GB@$99.99 G.SKILL
         - 2x8GB@$99.99 G.SKILL
+        - 16GB@$99.99 G.SKILL
         - 32GB@$119.99 Crucial
         - 32GB@$119.99 Team
         - 2x16GB@$124.99 G.SKILL
@@ -6773,12 +6773,12 @@
         - 2x8GB@$104.99 HyperX
         - 2x8GB@$108.99 Adata
         - 2x8GB@$109.99 Adata
+        - 2x8GB@$138.99 Corsair
+        - 2x8GB@$138.99 Corsair
         - 2x16GB@$138.99 Corsair
-        - 2x8GB@$138.99 Corsair
-        - 2x8GB@$138.99 Corsair
         - 2x16GB@$139.99 HyperX
-        - 2x16GB@$142.99 Corsair
         - 2x8GB@$142.99 Corsair
+        - 2x16GB@$142.99 Corsair
         - 16GB@$147.99 PNY
         - 2x16GB@$149.99 Adata
         - 2x16GB@$149.99 HyperX
@@ -6787,8 +6787,8 @@
         - 2x16GB@$157.99 PNY
         - 2x16GB@$159.99 Adata
         - 2x16GB@$159.99 Corsair
-        - 2x16GB@$159.99 HyperX
         - 2x8GB@$159.99 HyperX
+        - 2x16GB@$159.99 HyperX
         - 2x16GB@$159.99 PNY
         - 2x16GB@$160.99 HyperX
         - 2x8GB@$162.99 Corsair
@@ -6801,8 +6801,8 @@
         - 2x16GB@$176.99 Corsair
         - 2x16GB@$184.99 HyperX
         - 2x16GB@$189.99 Adata
-        - 4x8GB@$209.99 HyperX
         - 2x16GB@$209.99 Corsair
+        - 4x8GB@$209.99 HyperX
         - 2x16GB@$221.99 Corsair
         - 2x16GB@$284.99 Corsair
         - 4x16GB@$364.99 HyperX
@@ -6860,9 +6860,9 @@
         - 2x8GB@$77.99 GeIL
         - 2x8GB@$78.99 G.SKILL
         - 2x8GB@$78.99 OLOy
-        - 16GB@$79.99 Patriot
         - 2x8GB@$79.99 Crucial
         - 2x8GB@$79.99 GeIL
+        - 16GB@$79.99 Patriot
         - 2x8GB@$82.99 Patriot
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$85.99 GeIL
@@ -6909,8 +6909,8 @@
         - 4GB@$16.99 Neo Forza
         - 8GB@$32.99 Crucial
         - 16GB@$59.99 Neo Forza
-        - 16GB@$69.99 Crucial
         - 2x8GB@$69.99 Crucial
+        - 16GB@$69.99 Crucial
         - 2x8GB@$74.99 Crucial
         - 32GB@$109.99 Neo Forza
         - 32GB@$129.99 Crucial
@@ -6929,22 +6929,22 @@
         - 8GB@$42.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 2x8GB@$64.99 G.SKILL
+        - 2x8GB@$69.99 G.SKILL
+        - 2x8GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 Team
-        - 2x8GB@$69.99 G.SKILL
-        - 2x8GB@$69.99 G.SKILL
         - 2x8GB@$73.99 Crucial
+        - 2x8GB@$74.99 G.SKILL
+        - 2x8GB@$74.99 G.SKILL
         - 16GB@$74.99 G.SKILL
-        - 2x8GB@$74.99 G.SKILL
-        - 2x8GB@$74.99 G.SKILL
         - 16GB@$75.99 CORSAIR
         - 2x8GB@$81.99 CORSAIR
         - 2x8GB@$83.99 CORSAIR
-        - 16GB@$99.99 G.SKILL
         - 2x8GB@$99.99 G.SKILL
+        - 16GB@$99.99 G.SKILL
         - 2x16GB@$115.99 Crucial
         - 2x16GB@$124.99 G.SKILL
         - 2x16GB@$124.99 Team
@@ -6952,8 +6952,8 @@
         - 2x16GB@$134.99 G.SKILL
         - 2x16GB@$134.99 G.SKILL
         - 32GB@$139.99 G.SKILL
-        - 2x16GB@$144.99 G.SKILL
         - 32GB@$144.99 CORSAIR
+        - 2x16GB@$144.99 G.SKILL
         - 2x16GB@$147.99 Crucial
         - 2x16GB@$153.99 CORSAIR
         - 2x16GB@$159.99 CORSAIR
@@ -7028,8 +7028,8 @@
         - 2x16GB@$183.99 HyperX
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$189.99 Adata
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$202.99 HyperX
         - 2x16GB@$214.99 Corsair
         - 2x16GB@$226.99 Corsair
@@ -7065,9 +7065,9 @@
         - 2x16GB@$149.99 Crucial
         - 2x16GB@$154.99 TeamGroup
         - 2x16GB@$159.99 Crucial
-        - 2x16GB@$164.99 TeamGroup
-        - 2x16GB@$164.99 TeamGroup
         - 2x8GB@$164.99 Crucial
+        - 2x16GB@$164.99 TeamGroup
+        - 2x16GB@$164.99 TeamGroup
         - 2x16GB@$172.99 Crucial
         - 2x16GB@$191.99 Crucial
         - 2x16GB@$193.99 Crucial
@@ -7086,16 +7086,16 @@
         - 8GB@$39.99 Crucial
         - 2x4GB@$47.99 Patriot
         - 2x8GB@$73.99 OLOy
-        - 16GB@$74.99 G.SKILL
         - 2x8GB@$74.99 G.SKILL
+        - 16GB@$74.99 G.SKILL
         - 2x8GB@$74.99 Team
         - 2x8GB@$74.99 Team
         - 2x8GB@$76.99 Crucial
         - 2x8GB@$77.99 GeIL
         - 2x8GB@$78.99 OLOy
-        - 16GB@$79.99 Patriot
         - 2x8GB@$79.99 Crucial
         - 2x8GB@$79.99 GeIL
+        - 16GB@$79.99 Patriot
         - 2x8GB@$82.99 Patriot
         - 2x8GB@$84.99 CORSAIR
         - 2x8GB@$84.99 G.SKILL
@@ -7143,8 +7143,8 @@
         - 8GB@$29.99 Neo Forza
         - 8GB@$32.99 Crucial
         - 16GB@$59.99 Neo Forza
-        - 16GB@$69.99 Crucial
         - 2x8GB@$69.99 Crucial
+        - 16GB@$69.99 Crucial
         - 2x8GB@$74.99 Crucial
         - 32GB@$109.99 Neo Forza
         - 32GB@$129.99 Crucial
@@ -7162,15 +7162,15 @@
         - 8GB@$43.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 2x8GB@$64.99 G.SKILL
+        - 2x8GB@$69.99 G.SKILL
+        - 2x8GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 Team
-        - 2x8GB@$69.99 G.SKILL
-        - 2x8GB@$69.99 G.SKILL
         - 16GB@$72.99 Crucial
         - 2x8GB@$73.99 Crucial
+        - 2x8GB@$74.99 G.SKILL
+        - 2x8GB@$74.99 G.SKILL
         - 16GB@$74.99 G.SKILL
-        - 2x8GB@$74.99 G.SKILL
-        - 2x8GB@$74.99 G.SKILL
         - 2x8GB@$79.99 Crucial
         - 2x8GB@$79.99 Crucial
         - 2x8GB@$81.99 CORSAIR
@@ -7183,10 +7183,10 @@
         - 32GB@$126.99 Crucial
         - 2x16GB@$134.99 G.SKILL
         - 32GB@$139.99 G.SKILL
+        - 32GB@$144.99 CORSAIR
         - 2x16GB@$144.99 Crucial
         - 2x16GB@$144.99 G.SKILL
         - 2x16GB@$144.99 G.SKILL
-        - 32GB@$144.99 CORSAIR
         - 2x16GB@$147.99 Crucial
         - 2x16GB@$149.99 CORSAIR
         - 2x16GB@$153.99 CORSAIR
@@ -7300,9 +7300,9 @@
         - 2x16GB@$159.99 Crucial
         - 2x16GB@$159.99 TeamGroup
         - 2x16GB@$159.99 TeamGroup
-        - 2x16GB@$164.99 TeamGroup
-        - 2x16GB@$164.99 TeamGroup
         - 2x8GB@$164.99 Crucial
+        - 2x16GB@$164.99 TeamGroup
+        - 2x16GB@$164.99 TeamGroup
         - 2x16GB@$172.99 Crucial
         - 2x16GB@$191.99 Crucial
         - 2x16GB@$193.99 Crucial
@@ -7329,8 +7329,8 @@
         - 2x8GB@$76.99 Crucial
         - 2x8GB@$77.99 OLOy
         - 2x8GB@$78.99 OLOy
-        - 16GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Crucial
+        - 16GB@$79.99 G.SKILL
         - 2x8GB@$79.99 GeIL
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$82.99 Patriot
@@ -7378,8 +7378,8 @@
         - 8GB@$29.99 Neo Forza
         - 8GB@$39.99 Crucial
         - 16GB@$59.99 Neo Forza
-        - 16GB@$69.99 Crucial
         - 2x8GB@$69.99 Crucial
+        - 16GB@$69.99 Crucial
         - 2x8GB@$74.99 Crucial
         - 32GB@$109.99 Neo Forza
         - 32GB@$129.99 Crucial
@@ -7390,30 +7390,30 @@
         - 8GB@$34.99 G.SKILL
         - 8GB@$37.99 G.SKILL
         - 8GB@$39.95 Crucial
-        - 2x4GB@$39.99 G.SKILL
         - 8GB@$39.99 Crucial
+        - 2x4GB@$39.99 G.SKILL
         - 8GB@$40.99 G.SKILL
         - 8GB@$47.99 CORSAIR
         - 8GB@$48.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 16GB@$69.99 Crucial
+        - 2x8GB@$69.99 G.SKILL
         - 16GB@$69.99 G.SKILL
         - 16GB@$69.99 Team
-        - 2x8GB@$69.99 G.SKILL
         - 16GB@$72.99 Crucial
         - 2x8GB@$72.99 G.SKILL
         - 2x8GB@$73.99 Crucial
-        - 16GB@$74.99 G.SKILL
         - 2x8GB@$74.99 G.SKILL
-        - 16GB@$76.99 G.SKILL
+        - 16GB@$74.99 G.SKILL
         - 2x8GB@$76.99 G.SKILL
+        - 16GB@$76.99 G.SKILL
         - 2x8GB@$79.99 Crucial
         - 2x8GB@$79.99 Crucial
         - 2x8GB@$79.99 G.SKILL
         - 16GB@$88.99 CORSAIR
         - 2x8GB@$93.99 CORSAIR
-        - 16GB@$99.99 G.SKILL
         - 2x8GB@$99.99 G.SKILL
+        - 16GB@$99.99 G.SKILL
         - 2x16GB@$119.99 G.SKILL
         - 32GB@$119.99 Team
         - 2x16GB@$124.99 Team
@@ -7494,8 +7494,8 @@
         - 2x16GB@$186.99 HyperX
         - 2x16GB@$189.99 Adata
         - 2x16GB@$189.99 Corsair
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$194.99 Corsair
         - 2x16GB@$202.99 HyperX
         - 4x8GB@$229.99 HyperX
@@ -7629,10 +7629,10 @@
         - 2x8GB@$69.99 G.SKILL
         - 16GB@$72.99 Crucial
         - 2x8GB@$72.99 G.SKILL
-        - 16GB@$74.99 G.SKILL
         - 2x8GB@$74.99 G.SKILL
-        - 16GB@$76.99 G.SKILL
+        - 16GB@$74.99 G.SKILL
         - 2x8GB@$76.99 G.SKILL
+        - 16GB@$76.99 G.SKILL
         - 16GB@$79.99 Crucial
         - 16GB@$79.99 G.SKILL
         - 2x8GB@$80.99 Crucial
@@ -7730,12 +7730,12 @@
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 Corsair
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$189.99 Adata
-        - 2x16GB@$189.99 Adata
         - 2x8GB@$189.99 Adata
+        - 2x16GB@$189.99 Adata
+        - 2x16GB@$189.99 Adata
         - 2x16GB@$189.99 Corsair
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$194.99 Corsair
         - 2x16GB@$202.99 HyperX
         - 4x8GB@$229.99 HyperX
@@ -7820,13 +7820,13 @@
         - 8GB@$52.99 G.SKILL
         - 2x8GB@$69.99 G.SKILL
         - 16GB@$73.99 Team
+        - 2x8GB@$74.99 Crucial
         - 16GB@$74.99 Crucial
         - 16GB@$74.99 G.SKILL
-        - 2x8GB@$74.99 Crucial
-        - 16GB@$79.99 G.SKILL
-        - 16GB@$79.99 G.SKILL
         - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 G.SKILL
+        - 16GB@$79.99 G.SKILL
+        - 16GB@$79.99 G.SKILL
         - 2x8GB@$80.99 Crucial
         - 2x8GB@$80.99 Crucial
         - 2x8GB@$82.99 G.SKILL
@@ -7840,8 +7840,8 @@
         - 2x16GB@$139.99 G.SKILL
         - 32GB@$143.99 Crucial
         - 2x16GB@$144.99 G.SKILL
-        - 2x16GB@$144.99 Team
         - 32GB@$144.99 G.SKILL
+        - 2x16GB@$144.99 Team
         - 32GB@$144.99 Team
         - 32GB@$157.99 Crucial
         - 2x16GB@$159.99 G.SKILL
@@ -7912,20 +7912,20 @@
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$181.99 Corsair
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 Corsair
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$189.99 Adata
-        - 2x16GB@$189.99 Adata
-        - 2x16GB@$189.99 Adata
         - 2x8GB@$189.99 Adata
-        - 2x16GB@$191.99 HyperX
+        - 2x16GB@$189.99 Adata
+        - 2x16GB@$189.99 Adata
+        - 2x16GB@$189.99 Adata
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$202.99 Corsair
         - 2x16GB@$202.99 HyperX
         - 2x16GB@$214.99 Corsair
@@ -7943,8 +7943,8 @@
         - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
         - 2x8GB@$81.99 Crucial
-        - 16GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
+        - 16GB@$84.99 G.SKILL
         - 2x8GB@$85.99 GeIL
         - 2x8GB@$86.99 CORSAIR
         - 2x8GB@$86.99 OLOy
@@ -7955,8 +7955,8 @@
         - 2x8GB@$94.99 OLOy
         - 2x8GB@$94.99 Patriot
         - 2x8GB@$96.99 Team
-        - 16GB@$97.99 Patriot
         - 2x8GB@$97.99 GeIL
+        - 16GB@$97.99 Patriot
         - 2x8GB@$99.99 G.SKILL
         - 2x8GB@$99.99 GeIL
         - 2x8GB@$99.99 Team
@@ -8006,20 +8006,20 @@
         - 8GB@$40.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 Crucial
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$49.99 CORSAIR
         - 8GB@$51.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 2x8GB@$69.99 G.SKILL
         - 16GB@$73.99 Team
-        - 16GB@$74.99 G.SKILL
         - 2x8GB@$74.99 Crucial
+        - 16GB@$74.99 G.SKILL
         - 16GB@$78.99 Crucial
         - 16GB@$79.99 Crucial
-        - 16GB@$79.99 G.SKILL
-        - 16GB@$79.99 G.SKILL
         - 2x8GB@$79.99 G.SKILL
+        - 16GB@$79.99 G.SKILL
+        - 16GB@$79.99 G.SKILL
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
@@ -8105,16 +8105,16 @@
         - 2x16GB@$172.99 Corsair
         - 2x16GB@$175.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
         - 2x16GB@$189.99 Adata
         - 2x16GB@$189.99 Adata
         - 2x16GB@$190.99 Corsair
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$194.99 Corsair
         - 2x16GB@$199.99 Adata
         - 2x16GB@$199.99 Corsair
@@ -8143,9 +8143,9 @@
         - 2x8GB@$85.99 GeIL
         - 2x8GB@$86.99 CORSAIR
         - 2x8GB@$86.99 Crucial
-        - 16GB@$87.99 OLOy
         - 2x8GB@$87.99 CORSAIR
         - 2x8GB@$87.99 GeIL
+        - 16GB@$87.99 OLOy
         - 2x8GB@$89.99 CORSAIR
         - 2x8GB@$89.99 OLOy
         - 2x8GB@$91.99 GeIL
@@ -8153,8 +8153,8 @@
         - 2x8GB@$92.99 OLOy
         - 2x8GB@$94.99 Patriot
         - 2x8GB@$96.99 Team
-        - 16GB@$97.99 Patriot
         - 2x8GB@$97.99 OLOy
+        - 16GB@$97.99 Patriot
         - 2x8GB@$99.99 G.SKILL
         - 2x8GB@$99.99 GeIL
         - 2x8GB@$99.99 Team
@@ -8169,8 +8169,8 @@
         - 2x8GB@$128.98 CORSAIR
         - 2x8GB@$134.99 G.SKILL
         - 2x16GB@$154.99 G.SKILL
-        - 2x16GB@$157.99 OLOy
         - 32GB@$157.99 Crucial
+        - 2x16GB@$157.99 OLOy
         - 2x16GB@$166.99 Team
         - 2x16GB@$174.99 G.SKILL
         - 2x16GB@$179.99 Patriot
@@ -8200,8 +8200,8 @@
         - 8GB@$40.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 Crucial
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$49.99 CORSAIR
         - 8GB@$51.99 CORSAIR
         - 8GB@$52.99 G.SKILL
@@ -8209,10 +8209,10 @@
         - 16GB@$74.99 G.SKILL
         - 16GB@$78.99 Crucial
         - 16GB@$79.99 Crucial
-        - 16GB@$79.99 G.SKILL
-        - 16GB@$79.99 G.SKILL
         - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 G.SKILL
+        - 16GB@$79.99 G.SKILL
+        - 16GB@$79.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
@@ -8302,17 +8302,17 @@
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$175.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
         - 2x16GB@$187.99 Corsair
-        - 2x16GB@$189.99 Adata
         - 2x8GB@$189.99 Adata
-        - 2x16GB@$191.99 HyperX
+        - 2x16GB@$189.99 Adata
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$194.99 Corsair
         - 2x16GB@$199.99 Adata
         - 2x16GB@$202.99 Corsair
@@ -8340,17 +8340,17 @@
         - 2x8GB@$79.99 Team
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$85.99 GeIL
-        - 16GB@$87.99 OLOy
         - 2x8GB@$87.99 GeIL
+        - 16GB@$87.99 OLOy
         - 2x8GB@$89.99 CORSAIR
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 OLOy
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$94.99 Patriot
-        - 16GB@$97.99 Patriot
         - 2x8GB@$97.99 GeIL
         - 2x8GB@$97.99 OLOy
         - 2x8GB@$97.99 OLOy
+        - 16GB@$97.99 Patriot
         - 2x8GB@$99.99 G.SKILL
         - 2x8GB@$99.99 GeIL
         - 2x8GB@$99.99 Team
@@ -8371,8 +8371,8 @@
         - 2x16GB@$157.99 OLOy
         - 32GB@$158.99 Crucial
         - 2x16GB@$159.99 G.SKILL
-        - 2x16GB@$169.99 Team
         - 2x8GB@$169.99 Patriot
+        - 2x16GB@$169.99 Team
         - 2x16GB@$174.99 G.SKILL
         - 2x16GB@$179.99 OLOy
         - 2x16GB@$179.99 Patriot
@@ -8402,21 +8402,21 @@
         - 8GB@$40.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 Crucial
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$49.99 CORSAIR
         - 8GB@$51.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 8GB@$67.99 G.SKILL
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
@@ -8505,15 +8505,15 @@
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$189.99 Adata
         - 2x8GB@$189.99 Adata
-        - 2x16GB@$191.99 HyperX
+        - 2x16GB@$189.99 Adata
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$194.99 Corsair
@@ -8554,8 +8554,8 @@
         - 16GB@$77.99 Neo Forza
         - 32GB@$189.99 Kingston
         Newegg:
-        - 16GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
+        - 16GB@$84.99 G.SKILL
         - 2x8GB@$85.99 G.SKILL
         - 2x8GB@$86.99 Crucial
         - 2x8GB@$87.99 GeIL
@@ -8618,24 +8618,24 @@
         - 8GB@$40.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 Crucial
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$49.99 CORSAIR
         - 8GB@$51.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 8GB@$67.99 G.SKILL
         - 16GB@$78.99 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
         - 16GB@$85.99 Crucial
-        - 16GB@$87.99 G.SKILL
         - 2x8GB@$87.99 Crucial
+        - 16GB@$87.99 G.SKILL
         - 2x8GB@$98.99 CORSAIR
         - 16GB@$99.99 CORSAIR
         - 2x8GB@$109.99 CORSAIR
@@ -8681,8 +8681,8 @@
         - 2x8GB@$90.99 Corsair
         - 2x8GB@$92.99 HyperX
         - 2x8GB@$94.99 Corsair
-        - 16GB@$94.99 HyperX
         - 2x8GB@$94.99 HyperX
+        - 16GB@$94.99 HyperX
         - 2x8GB@$94.99 PNY
         - 2x8GB@$94.99 PNY
         - 2x8GB@$96.99 Corsair
@@ -8724,15 +8724,15 @@
         - 2x16GB@$172.99 Corsair
         - 32GB@$172.99 HyperX
         - 2x16GB@$176.99 Corsair
-        - 32GB@$176.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
+        - 32GB@$176.99 HyperX
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$199.99 Adata
@@ -8781,8 +8781,8 @@
         Newegg:
         - 2x8GB@$77.99 Team
         - 2x8GB@$81.99 GeIL
-        - 16GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
+        - 16GB@$84.99 G.SKILL
         - 2x8GB@$87.99 OLOy
         - 2x8GB@$89.99 CORSAIR
         - 2x8GB@$89.99 G.SKILL
@@ -8843,23 +8843,23 @@
         - 8GB@$40.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 Crucial
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$49.99 CORSAIR
         - 8GB@$51.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 8GB@$67.99 G.SKILL
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 Team
+        - 2x8GB@$87.99 Crucial
+        - 2x8GB@$87.99 Crucial
         - 16GB@$87.99 G.SKILL
-        - 2x8GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$98.99 CORSAIR
         - 16GB@$99.99 CORSAIR
@@ -8905,8 +8905,8 @@
         - 2x8GB@$92.99 HyperX
         - 2x8GB@$94.99 Corsair
         - 2x8GB@$94.99 Corsair
-        - 16GB@$94.99 HyperX
         - 2x8GB@$94.99 HyperX
+        - 16GB@$94.99 HyperX
         - 2x8GB@$96.99 Corsair
         - 2x8GB@$98.99 Corsair
         - 2x8GB@$98.99 HyperX
@@ -8944,16 +8944,16 @@
         - 2x16GB@$171.99 HyperX
         - 32GB@$172.99 HyperX
         - 16GB@$174.99 PNY
-        - 32GB@$176.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
+        - 32GB@$176.99 HyperX
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$194.99 Corsair
@@ -8966,8 +8966,8 @@
         - 2x16GB@$208.99 Corsair
         - 2x16GB@$209.99 Adata
         - 2x16GB@$211.99 Corsair
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$226.99 Corsair
         - 2x16GB@$228.99 HyperX
@@ -9005,8 +9005,8 @@
         Newegg:
         - 2x8GB@$77.99 Team
         - 2x8GB@$81.99 GeIL
-        - 16GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
+        - 16GB@$84.99 G.SKILL
         - 2x8GB@$87.99 GeIL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 OLOy
@@ -9075,16 +9075,16 @@
         - 8GB@$67.99 G.SKILL
         - 16GB@$79.99 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
-        - 16GB@$87.99 G.SKILL
         - 2x8GB@$87.99 Crucial
+        - 16GB@$87.99 G.SKILL
         - 16GB@$89.99 CORSAIR
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$98.99 CORSAIR
@@ -9094,8 +9094,8 @@
         - 2x16GB@$154.99 G.SKILL
         - 32GB@$158.99 Crucial
         - 2x16GB@$159.99 G.SKILL
-        - 2x16GB@$159.99 Team
         - 32GB@$159.99 G.SKILL
+        - 2x16GB@$159.99 Team
         - 2x16GB@$160.99 Crucial
         - 2x16GB@$160.99 Crucial
         - 2x16GB@$169.99 G.SKILL
@@ -9170,15 +9170,15 @@
         - 2x16GB@$171.99 HyperX
         - 16GB@$174.99 PNY
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
         - 2x16GB@$189.99 Corsair
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$194.99 PNY
@@ -9192,8 +9192,8 @@
         - 2x16GB@$207.99 Corsair
         - 2x16GB@$209.99 Adata
         - 2x16GB@$217.99 Corsair
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$221.99 Corsair
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$226.99 Corsair
@@ -9232,17 +9232,17 @@
         Newegg:
         - 2x8GB@$77.99 Team
         - 2x8GB@$81.99 GeIL
-        - 16GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
+        - 16GB@$84.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
         - 2x8GB@$89.99 OLOy
         - 2x8GB@$91.99 Patriot
-        - 16GB@$92.99 Patriot
         - 2x8GB@$92.99 CORSAIR
         - 2x8GB@$92.99 G.SKILL
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$92.99 GeIL
+        - 16GB@$92.99 Patriot
         - 2x8GB@$95.99 OLOy
         - 2x8GB@$95.99 OLOy
         - 2x8GB@$97.99 CORSAIR
@@ -9302,24 +9302,24 @@
         - 8GB@$42.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 CORSAIR
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$47.99 CORSAIR
         - 8GB@$52.99 G.SKILL
         - 8GB@$67.99 G.SKILL
         - 16GB@$79.95 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 16GB@$84.99 CORSAIR
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 Team
-        - 16GB@$87.99 G.SKILL
         - 2x8GB@$87.99 Crucial
+        - 16GB@$87.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$94.99 CORSAIR
         - 2x8GB@$109.99 CORSAIR
@@ -9402,14 +9402,14 @@
         - 2x16GB@$171.99 HyperX
         - 16GB@$174.99 PNY
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$184.99 Corsair
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$194.99 PNY
@@ -9425,8 +9425,8 @@
         - 32GB@$204.99 HyperX
         - 2x16GB@$209.99 Adata
         - 2x16GB@$216.99 Corsair
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$222.99 Corsair
@@ -9467,16 +9467,16 @@
         - 2x4GB@$52.99 Patriot
         - 2x8GB@$77.99 Team
         - 2x8GB@$81.99 GeIL
-        - 16GB@$84.99 G.SKILL
         - 2x8GB@$84.99 G.SKILL
+        - 16GB@$84.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
         - 2x8GB@$91.99 Patriot
-        - 16GB@$92.99 Patriot
         - 2x8GB@$92.99 G.SKILL
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$92.99 OLOy
+        - 16GB@$92.99 Patriot
         - 2x8GB@$94.99 CORSAIR
         - 2x8GB@$94.99 G.SKILL
         - 2x8GB@$97.99 CORSAIR
@@ -9546,9 +9546,9 @@
         - 8GB@$67.99 G.SKILL
         - 16GB@$79.95 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$83.99 Crucial
@@ -9556,8 +9556,8 @@
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 Team
         - 16GB@$87.99 CORSAIR
-        - 16GB@$87.99 G.SKILL
         - 2x8GB@$87.99 Crucial
+        - 16GB@$87.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$94.99 CORSAIR
         - 2x8GB@$109.99 CORSAIR
@@ -9637,18 +9637,18 @@
         - 2x8GB@$166.99 Corsair
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$184.99 Corsair
         - 2x16GB@$184.99 PNY
         - 2x16GB@$184.99 PNY
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
         - 2x16GB@$189.99 Corsair
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$196.99 Corsair
@@ -9660,8 +9660,8 @@
         - 2x16GB@$207.99 Corsair
         - 2x16GB@$211.99 Corsair
         - 2x16GB@$214.99 Adata
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$226.99 Corsair
@@ -9708,8 +9708,8 @@
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
         - 2x8GB@$89.99 Patriot
-        - 16GB@$91.99 Patriot
         - 2x8GB@$91.99 CORSAIR
+        - 16GB@$91.99 Patriot
         - 2x8GB@$92.99 G.SKILL
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$92.99 GeIL
@@ -9770,19 +9770,19 @@
         - 8GB@$39.99 G.SKILL
         - 8GB@$42.99 G.SKILL
         - 8GB@$43.99 Crucial
-        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 CORSAIR
+        - 2x4GB@$44.99 G.SKILL
         - 8GB@$44.99 G.SKILL
         - 8GB@$49.99 G.SKILL
         - 8GB@$52.99 CORSAIR
         - 8GB@$67.99 G.SKILL
         - 16GB@$79.99 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
         - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 16GB@$84.99 Crucial
@@ -9872,16 +9872,16 @@
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$184.99 PNY
         - 2x16GB@$184.99 PNY
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$196.99 Corsair
@@ -9896,8 +9896,8 @@
         - 32GB@$206.99 HyperX
         - 2x16GB@$211.99 Corsair
         - 2x16GB@$214.99 Adata
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$222.99 Corsair
@@ -9946,9 +9946,9 @@
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$93.99 Crucial
-        - 16GB@$94.99 Patriot
         - 2x8GB@$94.99 G.SKILL
         - 2x8GB@$94.99 OLOy
+        - 16GB@$94.99 Patriot
         - 2x8GB@$95.99 Patriot
         - 2x8GB@$96.99 OLOy
         - 2x8GB@$97.99 CORSAIR
@@ -10014,23 +10014,23 @@
         - 8GB@$54.99 G.SKILL
         - 16GB@$79.99 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 16GB@$79.99 Team
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
+        - 16GB@$79.99 Team
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 16GB@$84.99 CORSAIR
         - 16GB@$84.99 Crucial
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$86.99 G.SKILL
+        - 2x8GB@$87.99 Crucial
+        - 2x8GB@$87.99 Crucial
         - 16GB@$87.99 G.SKILL
-        - 2x8GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
         - 2x8GB@$109.99 CORSAIR
-        - 2x16GB@$139.99 Team
         - 2x8GB@$139.99 G.SKILL
+        - 2x16GB@$139.99 Team
         - 32GB@$149.99 Team
         - 32GB@$153.99 Crucial
         - 2x16GB@$154.99 G.SKILL
@@ -10107,16 +10107,16 @@
         - 2x8GB@$166.99 Corsair
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 PNY
         - 2x16GB@$179.99 PNY
         - 2x16GB@$184.99 Corsair
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 32GB@$193.99 HyperX
         - 2x16GB@$196.99 Corsair
@@ -10131,8 +10131,8 @@
         - 32GB@$206.99 HyperX
         - 2x16GB@$207.99 Corsair
         - 2x16GB@$214.99 Adata
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$219.99 Corsair
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$222.99 Corsair
@@ -10176,10 +10176,10 @@
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$84.99 OLOy
         - 2x8GB@$88.99 G.SKILL
-        - 16GB@$89.99 Patriot
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
+        - 16GB@$89.99 Patriot
         - 2x8GB@$91.99 OLOy
         - 2x8GB@$91.99 OLOy
         - 2x8GB@$92.98 CORSAIR
@@ -10249,18 +10249,18 @@
         - 16GB@$77.99 Team
         - 16GB@$79.99 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
         - 2x8GB@$81.99 Crucial
         - 2x8GB@$82.99 G.SKILL
         - 16GB@$84.99 Crucial
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$86.99 G.SKILL
+        - 2x8GB@$87.99 Crucial
+        - 2x8GB@$87.99 Crucial
         - 16GB@$87.99 G.SKILL
-        - 2x8GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
         - 2x8GB@$94.99 Crucial
         - 2x8GB@$98.99 CORSAIR
         - 16GB@$99.99 CORSAIR
@@ -10345,15 +10345,15 @@
         - 2x8GB@$166.99 Corsair
         - 2x16GB@$169.99 Corsair
         - 2x16GB@$171.99 HyperX
-        - 2x16GB@$179.99 Adata
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 PNY
         - 2x16GB@$179.99 PNY
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$186.99 HyperX
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 2x16GB@$192.99 Corsair
         - 2x16GB@$194.99 Corsair
@@ -10365,8 +10365,8 @@
         - 32GB@$204.99 HyperX
         - 2x16GB@$214.99 Adata
         - 2x16GB@$217.99 Corsair
-        - 2x16GB@$219.99 Adata
         - 2x8GB@$219.99 Adata
+        - 2x16GB@$219.99 Adata
         - 2x16GB@$222.99 Corsair
         - 2x16GB@$224.99 Corsair
         - 2x16GB@$224.99 Corsair
@@ -10414,7 +10414,6 @@
         - 2x8GB@$82.99 Patriot
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$88.99 G.SKILL
-        - 16GB@$89.99 Patriot
         - 2x8GB@$89.99 CORSAIR
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
@@ -10422,6 +10421,7 @@
         - 2x8GB@$89.99 OLOy
         - 2x8GB@$89.99 OLOy
         - 2x8GB@$89.99 Patriot
+        - 16GB@$89.99 Patriot
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$92.99 GeIL
         - 2x8GB@$96.99 Patriot
@@ -10439,8 +10439,8 @@
         - 2x8GB@$119.99 CORSAIR
         - 2x8GB@$124.99 Team
         - 2x8GB@$134.99 G.SKILL
-        - 2x16GB@$149.99 Team
         - 2x8GB@$149.99 Patriot
+        - 2x16GB@$149.99 Team
         - 32GB@$153.99 Crucial
         - 2x16GB@$159.99 Team
         - 2x8GB@$160.99 Patriot
@@ -10486,18 +10486,18 @@
         - 16GB@$77.99 Team
         - 2x8GB@$78.99 G.SKILL
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 16GB@$80.99 Crucial
         - 2x8GB@$81.99 Crucial
         - 16GB@$82.99 CORSAIR
         - 2x8GB@$82.99 G.SKILL
         - 16GB@$84.99 Crucial
         - 2x8GB@$86.99 G.SKILL
+        - 2x8GB@$87.99 Crucial
+        - 2x8GB@$87.99 Crucial
         - 16GB@$87.99 G.SKILL
-        - 2x8GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
         - 2x8GB@$94.99 Crucial
         - 2x8GB@$98.99 CORSAIR
         - 2x8GB@$109.99 CORSAIR
@@ -10584,16 +10584,16 @@
         - 2x8GB@$166.99 Corsair
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 PNY
         - 2x16GB@$179.99 PNY
         - 2x16GB@$184.99 Corsair
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$189.99 Adata
         - 32GB@$189.99 PNY
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 2x16GB@$194.99 Corsair
         - 32GB@$194.99 PNY
@@ -10649,8 +10649,8 @@
         - 2x8GB@$84.99 G.SKILL
         - 2x8GB@$85.99 OLOy
         - 2x8GB@$87.99 G.SKILL
-        - 16GB@$88.99 Patriot
         - 2x8GB@$88.99 G.SKILL
+        - 16GB@$88.99 Patriot
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
@@ -10701,8 +10701,8 @@
         - 2x8GB@$89.99 PNY
         - 2x8GB@$98.99 Corsair
         - 4x8GB@$139.99 PNY
-        - 32GB@$154.99 PNY
         - 2x16GB@$154.99 PNY
+        - 32GB@$154.99 PNY
         - 2x16GB@$169.99 PNY
         - 32GB@$299.99 PNY
         - 10x8GB@$349.99 PNY
@@ -10715,8 +10715,8 @@
         - 16GB@$94.99 Neo Forza
         - 2x8GB@$99.99 Crucial
         - 2x8GB@$99.99 Crucial
-        - 32GB@$179.99 Neo Forza
         - 2x16GB@$179.99 Crucial
+        - 32GB@$179.99 Neo Forza
         Newegg:
         - 8GB@$39.99 G.SKILL
         - 8GB@$39.99 G.SKILL
@@ -10730,16 +10730,16 @@
         - 2x8GB@$77.99 G.SKILL
         - 2x8GB@$78.99 G.SKILL
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
-        - 16GB@$80.99 Crucial
         - 2x8GB@$80.99 Crucial
+        - 16GB@$80.99 Crucial
         - 2x8GB@$86.99 G.SKILL
+        - 2x8GB@$87.99 Crucial
+        - 2x8GB@$87.99 Crucial
         - 16GB@$87.99 G.SKILL
-        - 2x8GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
         - 2x8GB@$94.99 Crucial
         - 2x8GB@$98.99 CORSAIR
         - 16GB@$99.99 CORSAIR
@@ -10749,8 +10749,8 @@
         - 32GB@$149.99 Team
         - 2x16GB@$154.99 G.SKILL
         - 2x16GB@$159.99 G.SKILL
-        - 2x16GB@$159.99 Team
         - 32GB@$159.99 G.SKILL
+        - 2x16GB@$159.99 Team
         - 2x16GB@$160.99 Crucial
         - 2x16GB@$160.99 Crucial
         - 2x16GB@$161.99 Crucial
@@ -10827,19 +10827,19 @@
         - 2x16GB@$169.99 Corsair
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 PNY
         - 2x16GB@$179.99 PNY
         - 2x16GB@$185.99 HyperX
         - 2x16GB@$189.99 Adata
         - 32GB@$189.99 PNY
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
-        - 2x16GB@$194.99 Corsair
-        - 2x16GB@$194.99 Corsair
         - 4x4GB@$194.99 Corsair
+        - 2x16GB@$194.99 Corsair
+        - 2x16GB@$194.99 Corsair
         - 32GB@$194.99 PNY
         - 2x16GB@$196.99 Corsair
         - 32GB@$197.99 HyperX
@@ -10889,8 +10889,8 @@
         - 2x8GB@$82.99 GeIL
         - 2x8GB@$83.99 CORSAIR
         - 2x8GB@$84.99 G.SKILL
-        - 16GB@$87.99 Patriot
         - 2x8GB@$87.99 G.SKILL
+        - 16GB@$87.99 Patriot
         - 2x8GB@$88.89 G.SKILL
         - 2x8GB@$88.99 CORSAIR
         - 2x8GB@$89.99 G.SKILL
@@ -10938,8 +10938,8 @@
         - 2x8GB@$89.99 PNY
         - 2x8GB@$98.99 Corsair
         - 4x8GB@$139.99 PNY
-        - 32GB@$154.99 PNY
         - 2x16GB@$154.99 PNY
+        - 32GB@$154.99 PNY
         - 2x16GB@$169.99 PNY
         - 32GB@$299.99 PNY
         - 10x8GB@$349.99 PNY
@@ -10952,8 +10952,8 @@
         - 16GB@$94.99 Neo Forza
         - 2x8GB@$99.99 Crucial
         - 2x8GB@$99.99 Crucial
-        - 32GB@$179.99 Neo Forza
         - 2x16GB@$179.99 Crucial
+        - 32GB@$179.99 Neo Forza
         Newegg:
         - 4GB@$26.99 Crucial
         - 8GB@$39.99 G.SKILL
@@ -10970,9 +10970,9 @@
         - 2x8GB@$78.99 G.SKILL
         - 16GB@$79.00 Crucial
         - 16GB@$79.98 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 16GB@$82.99 G.SKILL
         - 16GB@$84.99 CORSAIR
         - 2x8GB@$85.99 Crucial
@@ -11065,8 +11065,8 @@
         - 2x16GB@$169.99 Corsair
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 PNY
         - 2x16GB@$179.99 PNY
@@ -11074,8 +11074,8 @@
         - 2x16GB@$186.99 HyperX
         - 2x16GB@$189.99 Adata
         - 32GB@$189.99 PNY
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
+        - 2x16GB@$191.99 HyperX
         - 2x16GB@$192.99 Corsair
         - 4x4GB@$194.99 Corsair
         - 32GB@$194.99 PNY
@@ -11130,10 +11130,10 @@
         - 2x8GB@$77.99 GeIL
         - 2x8GB@$77.99 Patriot
         - 2x8GB@$81.99 OLOy
-        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 CORSAIR
         - 2x8GB@$82.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
+        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 GeIL
         - 2x8GB@$84.99 CORSAIR
         - 2x8GB@$85.99 G.SKILL
@@ -11183,8 +11183,8 @@
         - 2x8GB@$89.99 PNY
         - 2x8GB@$98.99 Corsair
         - 4x8GB@$139.99 PNY
-        - 32GB@$154.99 PNY
         - 2x16GB@$154.99 PNY
+        - 32GB@$154.99 PNY
         - 2x16GB@$169.99 PNY
         - 32GB@$299.99 PNY
         - 10x8GB@$349.99 PNY
@@ -11197,8 +11197,8 @@
         - 16GB@$94.99 Neo Forza
         - 2x8GB@$99.99 Crucial
         - 2x8GB@$99.99 Crucial
-        - 32GB@$179.99 Neo Forza
         - 2x16GB@$179.99 Crucial
+        - 32GB@$179.99 Neo Forza
         Newegg:
         - 4GB@$30.99 Crucial
         - 8GB@$39.99 G.SKILL
@@ -11215,9 +11215,9 @@
         - 2x8GB@$77.99 G.SKILL
         - 2x8GB@$78.99 G.SKILL
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 16GB@$82.99 G.SKILL
         - 2x8GB@$85.99 Crucial
         - 2x8GB@$87.99 Crucial
@@ -11310,8 +11310,8 @@
         - 32GB@$169.99 PNY
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$174.99 Corsair
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$184.99 Corsair
@@ -11321,10 +11321,10 @@
         - 2x16GB@$189.99 Corsair
         - 2x16GB@$189.99 Corsair
         - 32GB@$189.99 PNY
-        - 2x16GB@$191.99 HyperX
         - 2x8GB@$191.99 HyperX
-        - 2x16GB@$194.99 Corsair
+        - 2x16GB@$191.99 HyperX
         - 4x4GB@$194.99 Corsair
+        - 2x16GB@$194.99 Corsair
         - 32GB@$197.99 HyperX
         - 2x16GB@$199.99 Corsair
         - 32GB@$199.99 HyperX
@@ -11354,8 +11354,8 @@
         - 2x8GB@$149.99 G.Skill
         - 2x8GB@$154.99 G.Skill
         - 2x8GB@$159.99 G.Skill
-        - 2x16GB@$174.99 G.Skill
         - 2x8GB@$174.99 G.Skill
+        - 2x16GB@$174.99 G.Skill
         - 2x16GB@$199.99 Crucial
         - 2x16GB@$199.99 G.Skill
         - 2x16GB@$199.99 G.Skill
@@ -11370,10 +11370,10 @@
         - 2x8GB@$77.99 GeIL
         - 2x8GB@$77.99 OLOy
         - 2x8GB@$81.99 G.SKILL
-        - 16GB@$82.99 G.SKILL
-        - 16GB@$82.99 Patriot
         - 2x8GB@$82.99 G.SKILL
+        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 GeIL
+        - 16GB@$82.99 Patriot
         - 2x8GB@$85.99 G.SKILL
         - 2x8GB@$85.99 Patriot
         - 2x8GB@$87.99 G.SKILL
@@ -11421,8 +11421,8 @@
         - 2x16GB@$44.99 PNY
         - 2x8GB@$74.99 PNY
         - 16GB@$82.99 PNY
-        - 16GB@$84.99 PNY
         - 2x8GB@$84.99 PNY
+        - 16GB@$84.99 PNY
         - 2x8GB@$93.99 Corsair
         - 4x8GB@$139.99 PNY
         - 2x16GB@$149.99 PNY
@@ -11438,8 +11438,8 @@
         - 16GB@$94.99 Neo Forza
         - 2x8GB@$99.99 Crucial
         - 2x8GB@$99.99 Crucial
-        - 32GB@$179.99 Neo Forza
         - 2x16GB@$179.99 Crucial
+        - 32GB@$179.99 Neo Forza
         - 2x32GB@$309.99 Crucial
         Newegg:
         - 4GB@$26.99 Crucial
@@ -11455,17 +11455,17 @@
         - 16GB@$74.99 Team
         - 16GB@$77.99 Crucial
         - 2x8GB@$77.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
         - 2x8GB@$80.99 Crucial
         - 16GB@$82.99 G.SKILL
         - 2x8GB@$83.99 Crucial
         - 2x8GB@$85.99 Crucial
         - 2x8GB@$86.99 G.SKILL
-        - 16GB@$87.99 Crucial
         - 2x8GB@$87.99 Crucial
+        - 16GB@$87.99 Crucial
         - 2x8GB@$92.99 Crucial
         - 16GB@$97.99 CORSAIR
         - 2x8GB@$98.99 CORSAIR
@@ -11480,8 +11480,8 @@
         - 32GB@$159.99 G.SKILL
         - 2x16GB@$160.99 Crucial
         - 2x16GB@$168.99 Crucial
-        - 2x16GB@$169.99 G.SKILL
         - 32GB@$169.99 Crucial
+        - 2x16GB@$169.99 G.SKILL
         - 2x16GB@$174.99 Crucial
         - 2x16GB@$184.99 CORSAIR
         - 2x16GB@$192.99 CORSAIR
@@ -11554,8 +11554,8 @@
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
@@ -11611,21 +11611,21 @@
         - 2x4GB@$50.99 Patriot
         - 2x8GB@$75.99 GeIL
         - 2x8GB@$79.99 OLOy
-        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
+        - 16GB@$82.99 G.SKILL
         - 2x8GB@$85.99 G.SKILL
         - 2x8GB@$87.99 G.SKILL
         - 2x8GB@$87.99 GeIL
         - 2x8GB@$87.99 GeIL
         - 2x8GB@$87.99 OLOy
         - 2x8GB@$88.99 GeIL
-        - 16GB@$89.99 Patriot
         - 2x8GB@$89.99 CORSAIR
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
         - 2x8GB@$89.99 OLOy
         - 2x8GB@$89.99 OLOy
+        - 16GB@$89.99 Patriot
         - 2x8GB@$93.99 CORSAIR
         - 2x8GB@$93.99 CORSAIR
         - 2x8GB@$94.99 CORSAIR
@@ -11664,8 +11664,8 @@
         - 2x16GB@$44.99 PNY
         - 2x8GB@$74.99 PNY
         - 16GB@$82.99 PNY
-        - 16GB@$84.99 PNY
         - 2x8GB@$84.99 PNY
+        - 16GB@$84.99 PNY
         - 2x8GB@$93.99 Corsair
         - 4x8GB@$139.99 PNY
         - 2x16GB@$149.99 PNY
@@ -11682,8 +11682,8 @@
         - 2x8GB@$89.99 Crucial
         - 16GB@$94.99 Neo Forza
         - 2x8GB@$99.99 Crucial
-        - 32GB@$179.99 Neo Forza
         - 2x16GB@$179.99 Crucial
+        - 32GB@$179.99 Neo Forza
         - 2x32GB@$309.99 Crucial
         Newegg:
         - 4GB@$26.99 Crucial
@@ -11699,9 +11699,9 @@
         - 2x8GB@$77.99 G.SKILL
         - 2x8GB@$78.99 G.SKILL
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
         - 16GB@$82.99 G.SKILL
         - 2x8GB@$83.99 Crucial
@@ -11723,9 +11723,9 @@
         - 2x16GB@$159.99 G.SKILL
         - 32GB@$159.99 G.SKILL
         - 2x16GB@$168.99 Crucial
-        - 2x16GB@$169.99 G.SKILL
-        - 2x16GB@$169.99 G.SKILL
         - 32GB@$169.99 Crucial
+        - 2x16GB@$169.99 G.SKILL
+        - 2x16GB@$169.99 G.SKILL
         - 2x16GB@$174.99 Crucial
         - 2x16GB@$184.99 CORSAIR
         - 2x16GB@$196.99 CORSAIR
@@ -11798,8 +11798,8 @@
         - 32GB@$169.99 PNY
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
@@ -11811,8 +11811,8 @@
         - 2x16GB@$189.99 Corsair
         - 32GB@$189.99 PNY
         - 2x16GB@$192.99 Corsair
-        - 2x16GB@$194.99 Corsair
         - 4x4GB@$194.99 Corsair
+        - 2x16GB@$194.99 Corsair
         - 32GB@$197.99 HyperX
         - 2x16GB@$199.99 Corsair
         - 2x16GB@$202.99 HyperX
@@ -11857,8 +11857,8 @@
         Newegg:
         - 2x4GB@$49.99 Patriot
         - 2x8GB@$75.99 GeIL
-        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
+        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 OLOy
         - 2x8GB@$83.99 CORSAIR
         - 2x8GB@$84.99 CORSAIR
@@ -11869,11 +11869,11 @@
         - 2x8GB@$87.99 GeIL
         - 2x8GB@$87.99 OLOy
         - 2x8GB@$88.99 GeIL
-        - 16GB@$89.99 Patriot
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 G.SKILL
         - 2x8GB@$89.99 GeIL
         - 2x8GB@$89.99 OLOy
+        - 16GB@$89.99 Patriot
         - 2x8GB@$92.99 CORSAIR
         - 2x8GB@$93.99 OLOy
         - 2x8GB@$94.99 CORSAIR
@@ -11909,8 +11909,8 @@
         - 8GB@$42.99 PNY
         - 2x8GB@$74.99 PNY
         - 16GB@$82.99 PNY
-        - 16GB@$84.99 PNY
         - 2x8GB@$84.99 PNY
+        - 16GB@$84.99 PNY
         - 2x8GB@$93.99 Corsair
         - 4x8GB@$139.99 PNY
         - 8GB@$146.99 PNY
@@ -11928,8 +11928,8 @@
         - 16GB@$84.99 Crucial
         - 2x8GB@$89.99 Crucial
         - 16GB@$94.99 Neo Forza
-        - 32GB@$179.99 Neo Forza
         - 2x16GB@$179.99 Crucial
+        - 32GB@$179.99 Neo Forza
         - 2x32GB@$309.99 Crucial
         Newegg:
         - 8GB@$38.99 G.SKILL
@@ -11945,9 +11945,9 @@
         - 2x8GB@$77.99 G.SKILL
         - 16GB@$79.99 Crucial
         - 16GB@$79.99 Crucial
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 Team
         - 2x8GB@$80.99 Crucial
         - 16GB@$82.99 G.SKILL
@@ -11999,8 +11999,8 @@
         - 2x8GB@$87.99 PNY
         - 2x8GB@$89.99 Corsair
         - 2x8GB@$89.99 HyperX
-        - 16GB@$89.99 PNY
         - 2x8GB@$89.99 PNY
+        - 16GB@$89.99 PNY
         - 2x8GB@$90.99 Corsair
         - 2x8GB@$91.99 Corsair
         - 2x8GB@$92.99 HyperX
@@ -12047,8 +12047,8 @@
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$178.99 Corsair
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$184.99 Corsair
         - 2x16GB@$185.99 HyperX
@@ -12056,8 +12056,8 @@
         - 2x16GB@$189.99 Corsair
         - 2x16GB@$189.99 Corsair
         - 32GB@$189.99 PNY
-        - 2x16GB@$194.99 Corsair
         - 4x4GB@$194.99 Corsair
+        - 2x16GB@$194.99 Corsair
         - 32GB@$197.99 HyperX
         - 2x16GB@$202.99 HyperX
         - 2x16GB@$224.99 Corsair
@@ -12088,8 +12088,8 @@
         - 2x8GB@$149.99 G.Skill
         - 2x8GB@$154.99 G.Skill
         - 2x8GB@$159.99 G.Skill
-        - 2x16GB@$169.99 G.Skill
         - 2x8GB@$169.99 G.Skill
+        - 2x16GB@$169.99 G.Skill
         - 2x16GB@$194.99 G.Skill
         - 2x16GB@$194.99 G.Skill
         - 2x16GB@$199.99 G.Skill
@@ -12101,8 +12101,8 @@
         - 2x8GB@$73.99 GeIL
         - 2x8GB@$79.99 G.SKILL
         - 2x8GB@$79.99 OLOy
-        - 16GB@$82.99 G.SKILL
         - 2x8GB@$82.99 G.SKILL
+        - 16GB@$82.99 G.SKILL
         - 2x8GB@$84.99 CORSAIR
         - 2x8GB@$85.99 G.SKILL
         - 2x8GB@$85.99 G.SKILL
@@ -12113,10 +12113,10 @@
         - 2x8GB@$87.99 GeIL
         - 2x8GB@$87.99 GeIL
         - 2x8GB@$88.99 OLOy
-        - 16GB@$89.99 Patriot
         - 2x8GB@$89.99 CORSAIR
         - 2x8GB@$89.99 GeIL
         - 2x8GB@$89.99 Patriot
+        - 16GB@$89.99 Patriot
         - 2x8GB@$89.99 Team
         - 2x8GB@$90.99 CORSAIR
         - 2x8GB@$91.99 CORSAIR
@@ -12153,8 +12153,8 @@
         - 8GB@$42.99 PNY
         - 2x8GB@$74.99 PNY
         - 16GB@$77.99 PNY
-        - 16GB@$79.99 PNY
         - 2x8GB@$79.99 PNY
+        - 16GB@$79.99 PNY
         - 16GB@$84.99 PNY
         - 2x8GB@$93.99 Corsair
         - 4x8GB@$139.99 PNY
@@ -12211,8 +12211,8 @@
         - 2x16GB@$161.99 Crucial
         - 2x16GB@$161.99 Crucial
         - 2x16GB@$169.99 Crucial
-        - 2x16GB@$169.99 G.SKILL
         - 32GB@$169.99 Crucial
+        - 2x16GB@$169.99 G.SKILL
         - 2x16GB@$184.99 CORSAIR
         - 2x16GB@$197.99 CORSAIR
         - 2x16GB@$199.99 CORSAIR
@@ -12238,9 +12238,9 @@
         - 2x8GB@$87.99 PNY
         - 2x8GB@$89.99 Corsair
         - 2x8GB@$89.99 HyperX
+        - 2x8GB@$89.99 PNY
+        - 2x8GB@$89.99 PNY
         - 16GB@$89.99 PNY
-        - 2x8GB@$89.99 PNY
-        - 2x8GB@$89.99 PNY
         - 2x8GB@$92.99 Corsair
         - 2x8GB@$92.99 HyperX
         - 2x8GB@$94.99 Corsair
@@ -12286,8 +12286,8 @@
         - 2x16GB@$171.99 HyperX
         - 2x16GB@$174.99 Corsair
         - 2x16GB@$176.99 HyperX
-        - 2x16GB@$179.99 Adata
         - 2x8GB@$179.99 Adata
+        - 2x16GB@$179.99 Adata
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
         - 2x16GB@$179.99 Corsair
@@ -12297,8 +12297,8 @@
         - 2x16GB@$189.99 Corsair
         - 32GB@$189.99 PNY
         - 2x8GB@$191.99 HyperX
-        - 2x16GB@$194.99 Corsair
         - 4x4GB@$194.99 Corsair
+        - 2x16GB@$194.99 Corsair
         - 32GB@$197.99 HyperX
         - 2x16GB@$199.99 Corsair
         - 32GB@$199.99 HyperX
@@ -12348,9 +12348,9 @@
         - 2x8GB@$73.99 GeIL
         - 2x8GB@$74.99 OLOy
         - 2x8GB@$77.99 Team
+        - 2x8GB@$79.99 G.SKILL
+        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
-        - 2x8GB@$79.99 G.SKILL
         - 16GB@$79.99 Patriot
         - 2x8GB@$84.99 CORSAIR
         - 2x8GB@$84.99 OLOy
@@ -12400,8 +12400,8 @@
         - 8GB@$42.99 PNY
         - 2x8GB@$74.99 PNY
         - 16GB@$77.99 PNY
-        - 16GB@$79.99 PNY
         - 2x8GB@$79.99 PNY
+        - 16GB@$79.99 PNY
         - 16GB@$84.99 PNY
         - 2x8GB@$91.99 Corsair
         - 4x8GB@$139.99 PNY
@@ -12440,9 +12440,9 @@
         - 16GB@$84.99 Crucial
         - 2x8GB@$85.99 Crucial
         - 16GB@$87.99 CORSAIR
+        - 2x8GB@$87.99 Crucial
+        - 2x8GB@$87.99 Crucial
         - 16GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
-        - 2x8GB@$87.99 Crucial
         - 2x8GB@$92.99 Crucial
         - 2x8GB@$93.99 CORSAIR
         - 2x8GB@$109.99 CORSAIR
