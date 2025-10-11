@@ -97,6 +97,9 @@ def _parse_description(description):
     dollar_index = description.find('GB@$')
     space_index = description.find(' ')
 
+    if x_index >= dollar_index:
+        x_index = -1
+
     if x_index <= 0:
         count = 1
     else:
