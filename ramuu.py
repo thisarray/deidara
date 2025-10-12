@@ -93,26 +93,30 @@ def _parse_description(description):
     if len(description) < 10:
         raise ValueError('description must be a non-empty string.')
 
+    count = 1
+    size = 0
+    price = decimal.Decimal()
+    brand = ''
+
     x_index = description.find('x')
     dollar_index = description.find('GB@$')
     space_index = description.find(' ')
 
-    if x_index >= dollar_index:
-        x_index = -1
+    if dollar_index > 0:
+        if (0 < x_index) and (x_index < dollar_index):
+            # If there is a multiplier before the price part,
+            # then parse the count
+            count = int(description[:x_index])
+        else:
+            x_index = -1
 
-    if x_index <= 0:
-        count = 1
-    else:
-        count = int(description[:x_index])
+        if space_index > dollar_index:
+            brand = description[space_index+1:].strip()
+        else:
+            space_index = len(description)
 
-    size = 0
-    price = decimal.Decimal()
-    brand = ''
-    if space_index > 0:
-        brand = description[space_index+1:]
-        if dollar_index > 0:
-            size = int(description[x_index+1:dollar_index])
-            price = decimal.Decimal(description[dollar_index+4:space_index])
+        size = int(description[x_index+1:dollar_index])
+        price = decimal.Decimal(description[dollar_index+4:space_index])
 
     return count, size, price, brand
 
