@@ -224,26 +224,32 @@ function parseDescription(description) {
     throw new RangeError('description must be a non-empty string.');
   }
 
-  let xIndex = description.indexOf('x'),
-      dollarIndex = description.indexOf('gb@$'),
-      spaceIndex = description.indexOf(' '),
-      count = 0,
+  let count = 1,
       size = 0,
       price = 0,
-      brand = '';
+      brand = '',
+      xIndex = description.indexOf('x'),
+      dollarIndex = description.indexOf('gb@$'),
+      spaceIndex = description.indexOf(' ');
 
-  if (xIndex <= 0) {
-    count = 1;
-  }
-  else {
-    count = parseInt(description.substring(0, xIndex), 10);
-  }
-  if (spaceIndex > 0) {
-    brand = description.substring(spaceIndex + 1);
-    if (dollarIndex > 0) {
-      size = parseInt(description.substring(xIndex + 1, dollarIndex), 10);
-      price = parseFloat(description.substring(dollarIndex + 4, spaceIndex));
+  if (dollarIndex > 0) {
+    if ((0 < xIndex) && (xIndex < dollarIndex)) {
+      // If there is a multiplier before the price part, then parse the count
+      count = parseInt(description.substring(0, xIndex), 10);
     }
+    else {
+      xIndex = -1;
+    }
+
+    if (spaceIndex > dollarIndex) {
+      brand = description.substring(spaceIndex + 1).trim();
+    }
+    else {
+      spaceIndex = description.length;
+    }
+
+    size = parseInt(description.substring(xIndex + 1, dollarIndex), 10);
+    price = parseFloat(description.substring(dollarIndex + 4, spaceIndex));
   }
 
   return [count, size, price, brand];
